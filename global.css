@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@import "@radix-ui/themes/styles.css";
+
+Button:hover{
+    cursor: pointer;
+}
+
+Button.disabled:hover{
+    cursor:not-allowed;
+}
