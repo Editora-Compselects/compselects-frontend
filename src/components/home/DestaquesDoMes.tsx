@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Box, Text, IconButton, Card } from '@chakra-ui/react';
+import { Box, Text, IconButton, Image, Flex, Button } from '@chakra-ui/react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 export const DestaquesDoMes = () => {
@@ -8,55 +8,31 @@ export const DestaquesDoMes = () => {
   const publications = [
     {
       title: 'Programacao Web',
-      author: 'Demetro Mestre',
+      type: 'livro',
+      author: 'Demetrio Mestre',
+      summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus. Praesent quis dolor dictum, tincidunt nisl sit amet, ultrices est. Aliquam erat volutpat. Fusce iaculis nulla sapien, at bibendum turpis tincidunt et. In ullamcorper justo justo, ut pulvinar mi fringilla in. Cras sem elit, tempor eget turpis sed, auctor mollis tellus. Etiam ut arcu sed nunc semper sollicitudin. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse potenti.',
       coverImage: 'https://picsum.photos/id/1022/400/300',
     },
     {
       title: 'Programacao Web',
-      author: 'Demetro Mestre',
+      type: 'artigo',
+      author: 'Demetrio Mestre',
+      summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus. Praesent quis dolor dictum, tincidunt nisl sit amet, ultrices est. Aliquam erat volutpat. Fusce iaculis nulla sapien, at bibendum turpis tincidunt et. In ullamcorper justo justo, ut pulvinar mi fringilla in. Cras sem elit, tempor eget turpis sed, auctor mollis tellus. Etiam ut arcu sed nunc semper sollicitudin. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse potenti.',
       coverImage: 'https://picsum.photos/id/1022/400/300',
     },
     {
       title: 'Programacao Web',
-      author: 'Demetro Mestre',
+      type: 'periódico',
+      author: 'Demetrio Mestre',
+      summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus. Praesent quis dolor dictum, tincidunt nisl sit amet, ultrices est. Aliquam erat volutpat. Fusce iaculis nulla sapien, at bibendum turpis tincidunt et. In ullamcorper justo justo, ut pulvinar mi fringilla in. Cras sem elit, tempor eget turpis sed, auctor mollis tellus. Etiam ut arcu sed nunc semper sollicitudin. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse potenti.',
       coverImage: 'https://picsum.photos/id/1022/400/300',
-    },
-    {
-      title: 'Programacao Web',
-      author: 'Demetro Mestre',
-      coverImage: 'https://picsum.photos/id/1022/400/300',
-    },
-    {
-      title: 'Programacao Web',
-      author: 'Demetro Mestre',
-      coverImage: 'https://picsum.photos/id/1022/400/300',
-    },
-    {
-      title: 'Programacao Web',
-      author: 'Demetro Mestre',
-      coverImage: 'https://picsum.photos/id/1022/400/300',
-    },
-    {
-      title: 'Programacao Web',
-      author: 'Demetro Mestre',
-      coverImage: 'https://picsum.photos/id/1022/400/300',
-    },
-    {
-      title: 'Programacao Web',
-      author: 'Demetro Mestre',
-      coverImage: 'https://picsum.photos/id/1022/400/300',
-    },
-    {
-      title: 'Programacao Web',
-      author: 'Demetro Mestre',
-      coverImage: 'https://picsum.photos/id/1018/300/200',
     },
   ];
 
   const totalPublications = publications.length;
 
   const nextPublication = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % (totalPublications-3));
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % (totalPublications));
   };
 
   const prevPublication = () => {
@@ -64,40 +40,41 @@ export const DestaquesDoMes = () => {
   };
 
   return (
-    <Box color={"gray.100"} bgColor={"#3B4C82"} pb={12} pt={8}>
+    <Box bgColor={"#EFF4FD"} color={"#262A38"} pb={6} pt={8}>
         <Box className="relative w-full overflow-hidden" >
         <Text fontSize="3xl" fontWeight="bold" textAlign="center" mb={8}>
-            Explore nossos destaques do mês!
+            Publicações em destaque
         </Text>
         
         {/* Carrossel de publicações */}
         <Box
             w={"100vw"}
             className="flex transition-transform duration-500 ease-in-out"
-            style={{ transform: `translateX(-${currentIndex * 20}%)` }}
+            style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
             {publications.map((publication, index) => (
-            <Box
-            key={index}
-            className="flex-shrink-0"
-            mx={2}
-            p={4}
-            w={"20vw"}
-            h={"50vh"}
-            borderWidth="1px"
-            borderColor={"#6573A1"}
-            bgColor={"#858FAB"}
-            borderRadius="lg"
-            boxShadow="md"
-            textAlign="center"
-            color={"gray.200"}
-            >
                 <Box
-                className="bg-cover bg-center w-full h-64 rounded-md"
-                style={{ backgroundImage: `url(${publication.coverImage})` }}
-                />
-                <Text fontWeight="bold" mt={4}>{publication.title}</Text>
-                <Text>{publication.author}</Text>
+                key={index}
+                className="flex-shrink-0"
+                mx={2}
+                w={"99vw"}
+                h={"70vh"}
+                cursor={"pointer"}
+                p={10}
+                >
+                  <Flex>
+                    <Image src={publication.coverImage} h={"60vh"} fit={"cover"} aspectRatio={"portrait"}></Image>
+                    <Box ml={8}>
+                      <Flex h={"full"} alignItems={"center"} justifyContent={"space-around"} flexDirection={"column"}>
+                        <div>
+                        <Text fontSize={"3xl"}>{publication.title}</Text>
+                        <Text fontSize={"lg"}>por {publication.author}</Text>
+                        <Text mt={8} textAlign={"justify"} fontSize={"lg"}>{publication.summary}</Text>
+                        </div>
+                        <Button bgColor={"#0B1436"} w={"max"}>Ver mais sobre este {publication.type}</Button>
+                      </Flex>
+                    </Box>
+                  </Flex>
                 </Box>
             ))}
         </Box>

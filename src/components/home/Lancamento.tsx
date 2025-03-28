@@ -1,20 +1,65 @@
-import React, { useState } from 'react';
-import { Box, Text, IconButton, Card } from '@chakra-ui/react';
+import { useState } from 'react';
+import { Box, Text, IconButton, Image } from '@chakra-ui/react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
-export const Lancamento = () => {
+export const Lancamentos = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   
   const publications = [
     {
       title: 'Programacao Web',
-      author: 'Demetro Mestre',
+      type: 'Livro',
       coverImage: 'https://picsum.photos/id/1022/400/300',
     },
     {
       title: 'Programacao Web',
-      author: 'Demetro Mestre',
+      type: 'Livro',
       coverImage: 'https://picsum.photos/id/1022/400/300',
+    },
+    {
+      title: 'Programacao Web',
+      type: 'Livro',
+      coverImage: 'https://picsum.photos/id/1022/400/300',
+    },
+    {
+      title: 'Programacao Web',
+      type: 'Livro',
+      coverImage: 'https://picsum.photos/id/1022/400/300',
+    },
+    {
+      title: 'Programacao Web',
+      type: 'Livro',
+      coverImage: 'https://picsum.photos/id/1022/400/300',
+    },
+    {
+      title: 'Programacao Web',
+      type: 'Livro',
+      coverImage: 'https://picsum.photos/id/1022/400/300',
+    },
+    {
+      title: 'Programacao Web',
+      type: 'Artigo',
+      coverImage: 'https://picsum.photos/id/1018/300/200',
+    },
+    {
+      title: 'Programacao Web',
+      type: 'Artigo',
+      coverImage: 'https://picsum.photos/id/1018/300/200',
+    },
+    {
+      title: 'Programacao Web',
+      type: 'Artigo',
+      coverImage: 'https://picsum.photos/id/1018/300/200',
+    },
+    {
+      title: 'Programacao Web',
+      type: 'Artigo',
+      coverImage: 'https://picsum.photos/id/1018/300/200',
+    },
+    {
+      title: 'Programacao Web',
+      type: 'Artigo',
+      coverImage: 'https://picsum.photos/id/1018/300/200',
     },
   ];
 
@@ -29,10 +74,10 @@ export const Lancamento = () => {
   };
 
   return (
-    <Box color={"#8B9FE0"} bgColor={"gray.100"}  pb={12} pt={8}>
+    <Box color={"#EFF4FD"} bgColor={"#0B1436"} pb={6} pt={8}>
         <Box className="relative w-full overflow-hidden" >
         <Text fontSize="3xl" fontWeight="bold" textAlign="center" mb={8}>
-            Nossos últimos lançamentos!
+            Últimos lançamentos
         </Text>
         
         {/* Carrossel de publicações */}
@@ -42,27 +87,19 @@ export const Lancamento = () => {
             style={{ transform: `translateX(-${currentIndex * 20}%)` }}
         >
             {publications.map((publication, index) => (
-            <Box
-            key={index}
-            className="flex-shrink-0"
-            mx={2}
-            p={4}
-            w={"20vw"}
-            h={"50vh"}
-            borderWidth="1px"
-            borderColor={"#6573A1"}
-            bgColor={"#858FAB"}
-            borderRadius="lg"
-            boxShadow="md"
-            textAlign="center"
-            color={"gray.200"}
-            >
                 <Box
-                className="bg-cover bg-center w-full h-64 rounded-md"
-                style={{ backgroundImage: `url(${publication.coverImage})` }}
-                />
-                <Text fontWeight="bold" mt={4}>{publication.title}</Text>
-                <Text>{publication.author}</Text>
+                key={index}
+                className="flex-shrink-0"
+                mx={2}
+                w={"20vw"}
+                h={"70vh"}
+                textAlign="center"
+                color={"#EFF4FD"}
+                cursor={"pointer"}
+                >
+                <Image className='non-holographic-card' src={publication.coverImage} fit={"cover"} w={"full"} h={"80%"}></Image>
+                <Text fontSize={"xl"} mt={6}>{publication.title}</Text>
+                <Text>{publication.type}</Text>
                 </Box>
             ))}
         </Box>

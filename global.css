@@ -1,6 +1,24 @@
 @import "tailwindcss";
 @import "@radix-ui/themes/styles.css";
 
+@font-face {
+    font-family: 'Regular';
+    src: url('src/fonts/BigJohnPRO-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Bold';
+    src: url('src/fonts/BigJohnPRO-Bold.otf');
+}
+
+.bigJohn{
+    font-family: 'Bold';
+}
+
+p,span,h1,h2,h3,h4,h5,h6,div{
+    font-family: 'Bold';
+}
+
 Button:hover{
     cursor: pointer;
 }
@@ -163,4 +181,80 @@ Button.disabled:hover{
 		bottom: -25px;
 		left: -25px;
 	}
+}
+
+.cardShadow{
+	border: 1px solid #1353A6;
+	box-shadow: 10px -10px #1353A6;
+}
+
+.cardShadow:hover{
+	border: 1px solid #1353A6;
+	box-shadow: 10px -10px #1353A6;
+}
+
+.holographic-card {
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+	transition: all 0.5s ease;
+}
+
+.holographic-card::before {
+	content: '';
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width: 200%;
+	height: 200%;
+	background: linear-gradient(
+		0deg, 
+		transparent, 
+		transparent 30%, 
+		rgba(0,200,255,0.3)
+	);
+	transform: rotate(-45deg);
+	transition: all 0.5s ease;
+	opacity: 0;
+}
+
+.holographic-card:hover {
+transform: scale(1.05);
+box-shadow: 0 0 20px rgba(0,100,255,0.5);
+}
+
+.holographic-card:hover::before {
+opacity: 1;
+transform: rotate(-45deg) translateY(100%);
+}
+
+
+.non-holographic-card {
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+	transition: all 0.5s ease;
+}
+
+.non-holographic-card::before {
+	content: '';
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width: 200%;
+	height: 200%;
+	transform: rotate(-45deg);
+	transition: all 0.5s ease;
+	opacity: 0;
+}
+
+.non-holographic-card:hover {
+transform: scale(1.05);
+}
+
+.non-holographic-card:hover::before {
+opacity: 1;
+transform: rotate(-45deg) translateY(100%);
 }
