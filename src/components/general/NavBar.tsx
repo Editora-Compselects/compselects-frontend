@@ -1,11 +1,11 @@
 import { Box } from "@chakra-ui/react/box";
 import { Flex } from "@chakra-ui/react/flex";
 import { BookCopy } from "lucide-react";
-import {Link, Text} from "@chakra-ui/react"
+import { Link, Text } from "@chakra-ui/react"
 
 export const NavBar = () => {
     return (
-      <Box px={8} height={"80px"} w={"full"} bgColor={"blue.800"} alignContent={"center"} color={"gray.200"}>
+      <Box position={"sticky"} zIndex={"999"} px={8} height={"12vh"} w={"full"} bgColor={"blue.800"} alignContent={"center"} color={"gray.200"}>
         <Flex w={"full"} gap={8} placeContent={"space-between"}>
             <Flex alignItems={"center"} gapX={2}>
                 <BookCopy size={"28"}/>
