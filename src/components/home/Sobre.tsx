@@ -17,7 +17,7 @@ export const Sobre = () => {
                     </Box>
                     <Flex>
                         <Separator orientation={"vertical"}></Separator>
-                        <Image fit={"cover"} w={"full"} src={mockimageurl}></Image>
+                        <Image fit={"cover"} w={"full"} h={"full"} minH={"90vh"} src={mockimageurl}></Image>
                     </Flex>
                 </Grid>
             </Box>

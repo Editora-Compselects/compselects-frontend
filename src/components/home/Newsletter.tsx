@@ -11,7 +11,7 @@ export const Newsletter = () => {
             <Box color={"#EFF4FD"} bgColor={"#0B1436"}>
                 <Grid className="grid-cols-2">
                     <Flex>
-                        <Image fit={"cover"} w={"full"} src={mockimageurl}></Image>
+                        <Image fit={"cover"} w={"full"} h={"full"} minH={"90vh"} src={mockimageurl}></Image>
                     </Flex>
                     <Box p={8} alignContent={"center"}>
                         <Text textAlign={"center"} fontSize={"3xl"}>Fique por dentro de tudo no ramo da computação</Text>

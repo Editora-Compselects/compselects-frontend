@@ -14,7 +14,7 @@ export const HistoriaMissao = () => {
                         <Text textAlign={"justify"} mt={8} fontSize={"lg"}>{texto}</Text>
                         </Box>
                     <Flex>
-                        <Image fit={"cover"} w={"full"} src={mockimageurl}></Image>
+                        <Image fit={"cover"} w={"full"} h={"full"} minH={"90vh"} src={mockimageurl}></Image>
                     </Flex>
                 </Grid>
             </Box>

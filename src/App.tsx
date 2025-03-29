@@ -5,18 +5,19 @@ import EventoItem from './pages/EventoItem'
 import Eventos from './pages/Eventos'
 import Home from './pages/Home'
 import Sobre from './pages/Sobre'
+import Submissoes from './pages/Submissoes'
 
 function App() {
   return (
     <div className='overflow-x-hidden'>
       <NavBarSkeleton/>
-      <Home/>{/*
+      {/*<Home/>
       <Sobre/>
       <Publicacoes/>
       <PublicacaoItem/>
-      <Autores/>
-      <Submissoes/>
-      <Eventos/>*/}{/*
+      <Autores/>*/}
+      <Submissoes/>{/*
+      <Eventos/>
       <EventoItem/>
       <Blog/>
       <BlogPost/>
