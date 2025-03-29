@@ -16,19 +16,19 @@ export const FormularioSubmissao = () => {
       })
 
     return (
-      <Box p={8} pb={16} justifyItems={"center"}>
+      <Box p={8} pb={16} px={12} justifyItems={"center"}>
         <Text fontSize="3xl" fontWeight="bold" textAlign="center" mb={6}>Submeta seu trabalho!</Text>
-        <Text textAlign={"justify"} px={4}>{texto}</Text>
+        <Text textAlign={"justify"}>{texto}</Text>
 
-        <Grid mt={8} className="grid-cols-6" gap={3}>
+        <Grid mt={8} className="grid-cols-6" gap={3} w={"full"}>
             <Flex className="col-span-2" flexDirection={"column"} gap={3}>
-                <Input placeholder="Título do seu trabalho" h={"full"}></Input>
-                <Input placeholder="Autores" h={"full"}></Input>
-                <Select.Root collection={categorias} h={"full"}>
+                <Input placeholder="Título do seu trabalho" ></Input>
+                <Input placeholder="Autores" ></Input>
+                <Select.Root collection={categorias}>
                     <Select.HiddenSelect />
                     <Select.Control>
                         <Select.Trigger>
-                        <Select.ValueText  h={"full"} placeholder="Categoria do trabalho" />
+                        <Select.ValueText  placeholder="Categoria do trabalho" />
                         </Select.Trigger>
                         <Select.IndicatorGroup>
                         <Select.Indicator />
@@ -53,12 +53,12 @@ export const FormularioSubmissao = () => {
             </Box>
         
             <Box className="col-span-2">
-                <Text mb={3}>*Enviar em formato PDF, com tamanho máximo de 5MB.</Text>
+                <Text mb={3}>*formato PDF, tamanho máximo 5MB.</Text>
                 <FileUpload.Root w={"full"}>
                     <FileUpload.HiddenInput />
                     <FileUpload.Trigger asChild w={"full"}>
                         <Button variant="outline" size="sm">
-                            <HiUpload /> Seu trabalho aqui
+                            <HiUpload /> Envie seu trabalho aqui
                         </Button>
                     </FileUpload.Trigger>
                     <FileUpload.List />
