@@ -4,14 +4,14 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { mockimageurl } from '../../util/imageUrls';
 import { EventoCard } from '../general/EventoCard';
 
-export const Eventos = () => {
+export const EventosLista = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   
   const publications = [
     {
         nome: "Evento 1",
         foto: mockimageurl,
-        data: "20/02/25",
+        data: "20/02/26",
         local: "Praça",
         inscricao: "Livre",
         conteudo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus. Praesent quis dolor dictum, tincidunt nisl sit amet, ultrices est."
@@ -19,7 +19,7 @@ export const Eventos = () => {
     {
         nome: "Feira 1",
         foto: mockimageurl,
-        data: "20/02/25",
+        data: "20/08/25",
         local: "Praça",
         inscricao: "Ingresso pago",
         conteudo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus. Praesent quis dolor dictum, tincidunt nisl sit amet, ultrices est."
@@ -73,11 +73,11 @@ export const Eventos = () => {
     //navigate('eventos/item.id')
   }
 
-  return (
+  return ( 
     <Box bgColor={"white"} color={"#262A38"} pb={10} pt={8}>
         <Box className="relative w-full" >
         <Text fontSize="3xl" fontWeight="bold" textAlign="center" mb={8}>
-            Eventos e Conferências
+            Encontre a Compselects!
         </Text>
         
         {/* Carrossel de publicações */}

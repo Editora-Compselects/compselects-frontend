@@ -18,13 +18,13 @@ export const Parcerias = () => {
 
     return (
         <>
-            <Box bgColor={"white"} color={"#262A38"}>
+            <Box bgColor={"white"} color={"#262A38"} py={8}>
                     <Box p={8} textAlign={"center"} alignContent={"center"}>
                         <Text fontSize={"3xl"}>Nossos parceiros</Text>
                     </Box>
                     <Flex wrap={"wrap"} gap={3} mx={8} mb={12} justifyContent={"center"}>
                         <For each={parcerias}>
-                            {(item) => <Image cursor={"pointer"} className="non-holographic-card" aspectRatio={"square"} maxW={"10vw"} src={item}></Image>}
+                            {(item) => <Image className="non-holographic-card" aspectRatio={"square"} maxW={"10vw"} src={item}></Image>}
                         </For>
                     </Flex>
             </Box>
