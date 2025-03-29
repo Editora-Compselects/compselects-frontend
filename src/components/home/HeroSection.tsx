@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { Box, IconButton } from '@chakra-ui/react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { mockimageurl } from '../../util/imageUrls';
 
 export const HeroSection = () => {
   const images = [ //depois mudar pra imagens relevantes
-    'https://picsum.photos/id/1015/300/300',
-    'https://picsum.photos/id/1016/200/300',
-    'https://picsum.photos/id/1018/300/200',
-    'https://picsum.photos/id/1022/400/300',
+    mockimageurl,
+    mockimageurl,
+    mockimageurl,
+    mockimageurl,
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

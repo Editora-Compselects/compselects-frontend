@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Box, Text, IconButton, Image, Flex, Button } from '@chakra-ui/react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { mockimageurl } from '../../util/imageUrls';
 
 export const DestaquesDoMes = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -11,21 +12,21 @@ export const DestaquesDoMes = () => {
       type: 'livro',
       author: 'Demetrio Mestre',
       summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus. Praesent quis dolor dictum, tincidunt nisl sit amet, ultrices est. Aliquam erat volutpat. Fusce iaculis nulla sapien, at bibendum turpis tincidunt et. In ullamcorper justo justo, ut pulvinar mi fringilla in. Cras sem elit, tempor eget turpis sed, auctor mollis tellus. Etiam ut arcu sed nunc semper sollicitudin. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse potenti.',
-      coverImage: 'https://picsum.photos/id/1022/400/300',
+      coverImage: mockimageurl,
     },
     {
       title: 'Programacao Web',
       type: 'artigo',
       author: 'Demetrio Mestre',
       summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus. Praesent quis dolor dictum, tincidunt nisl sit amet, ultrices est. Aliquam erat volutpat. Fusce iaculis nulla sapien, at bibendum turpis tincidunt et. In ullamcorper justo justo, ut pulvinar mi fringilla in. Cras sem elit, tempor eget turpis sed, auctor mollis tellus. Etiam ut arcu sed nunc semper sollicitudin. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse potenti.',
-      coverImage: 'https://picsum.photos/id/1022/400/300',
+      coverImage: mockimageurl,
     },
     {
       title: 'Programacao Web',
       type: 'periódico',
       author: 'Demetrio Mestre',
       summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus. Praesent quis dolor dictum, tincidunt nisl sit amet, ultrices est. Aliquam erat volutpat. Fusce iaculis nulla sapien, at bibendum turpis tincidunt et. In ullamcorper justo justo, ut pulvinar mi fringilla in. Cras sem elit, tempor eget turpis sed, auctor mollis tellus. Etiam ut arcu sed nunc semper sollicitudin. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse potenti.',
-      coverImage: 'https://picsum.photos/id/1022/400/300',
+      coverImage: mockimageurl,
     },
   ];
 

@@ -1,5 +1,5 @@
-import { Box, Text, IconButton, Card, Flex, Image } from '@chakra-ui/react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { Box, Text, Card, Flex, Image } from '@chakra-ui/react';
+import { mockimageurl } from '../../util/imageUrls';
 
 export const AtalhosHomePage = () => {
 
@@ -14,7 +14,7 @@ export const AtalhosHomePage = () => {
             <Box cursor={"pointer"} w={cardW} justifyItems={"center"}>
                 <Card.Root rounded={"xs"} className='cardShadow holographic-card' >
                     <Card.Body p={0} aspectRatio={"square"}>
-                        <Image w={"full"} h={"full"} src='https://picsum.photos/id/1022/400/300'></Image>
+                        <Image w={"full"} h={"full"} src={mockimageurl}></Image>
                     </Card.Body>
                 </Card.Root>
                 <Text mt={3} fontSize={"xl"} fontWeight={"bold"}>Best Sellers</Text>
@@ -22,7 +22,7 @@ export const AtalhosHomePage = () => {
             <Box cursor={"pointer"} w={cardW} justifyItems={"center"}>
                 <Card.Root rounded={"xs"} className='cardShadow holographic-card' >
                     <Card.Body p={0} aspectRatio={"square"}>
-                        <Image w={"full"} h={"full"} src='https://picsum.photos/id/1022/400/300'></Image>
+                        <Image w={"full"} h={"full"} src={mockimageurl}></Image>
                     </Card.Body>
                 </Card.Root>
                 <Text mt={3} fontSize={"xl"} fontWeight={"bold"}>Lançamentos</Text>
@@ -30,7 +30,7 @@ export const AtalhosHomePage = () => {
             <Box cursor={"pointer"} w={cardW} justifyItems={"center"}>
                 <Card.Root rounded={"xs"} className='cardShadow holographic-card' >
                     <Card.Body p={0} aspectRatio={"square"}>
-                        <Image w={"full"} h={"full"} src='https://picsum.photos/id/1022/400/300'></Image>
+                        <Image w={"full"} h={"full"} src={mockimageurl}></Image>
                     </Card.Body>
                 </Card.Root>
                 <Text mt={3} fontSize={"xl"} fontWeight={"bold"}>Destaques</Text>
@@ -38,7 +38,7 @@ export const AtalhosHomePage = () => {
             <Box cursor={"pointer"} w={cardW} justifyItems={"center"}>
                 <Card.Root rounded={"xs"} className='cardShadow holographic-card' >
                     <Card.Body p={0} aspectRatio={"square"}>
-                        <Image w={"full"} h={"full"} src='https://picsum.photos/id/1022/400/300'></Image>
+                        <Image w={"full"} h={"full"} src={mockimageurl}></Image>
                     </Card.Body>
                 </Card.Root>
                 <Text mt={3} fontSize={"xl"} fontWeight={"bold"}>Nossos autores</Text>
@@ -46,7 +46,7 @@ export const AtalhosHomePage = () => {
             <Box cursor={"pointer"} w={cardW} justifyItems={"center"}>
                 <Card.Root rounded={"xs"} className='cardShadow holographic-card' >
                     <Card.Body p={0} aspectRatio={"square"}>
-                        <Image w={"full"} h={"full"} src='https://picsum.photos/id/1022/400/300'></Image>
+                        <Image w={"full"} h={"full"} src={mockimageurl}></Image>
                     </Card.Body>
                 </Card.Root>
                 <Text mt={3} fontSize={"xl"} fontWeight={"bold"}>Todas as publicações</Text>

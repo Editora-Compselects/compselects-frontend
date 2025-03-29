@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Box, Text, IconButton, Image } from '@chakra-ui/react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { mockimageurl } from '../../util/imageUrls';
 
 export const BestSellers = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -9,57 +10,57 @@ export const BestSellers = () => {
     {
       title: 'Programacao Web',
       type: 'Livro',
-      coverImage: 'https://picsum.photos/id/1022/400/300',
+      coverImage: mockimageurl,
     },
     {
       title: 'Programacao Web',
       type: 'Livro',
-      coverImage: 'https://picsum.photos/id/1022/400/300',
+      coverImage: mockimageurl,
     },
     {
       title: 'Programacao Web',
       type: 'Livro',
-      coverImage: 'https://picsum.photos/id/1022/400/300',
+      coverImage: mockimageurl,
     },
     {
       title: 'Programacao Web',
       type: 'Livro',
-      coverImage: 'https://picsum.photos/id/1022/400/300',
+      coverImage: mockimageurl,
     },
     {
       title: 'Programacao Web',
       type: 'Livro',
-      coverImage: 'https://picsum.photos/id/1022/400/300',
+      coverImage: mockimageurl,
     },
     {
       title: 'Programacao Web',
       type: 'Livro',
-      coverImage: 'https://picsum.photos/id/1022/400/300',
+      coverImage: mockimageurl,
     },
     {
       title: 'Programacao Web',
       type: 'Artigo',
-      coverImage: 'https://picsum.photos/id/1018/300/200',
+      coverImage: mockimageurl,
     },
     {
       title: 'Programacao Web',
       type: 'Artigo',
-      coverImage: 'https://picsum.photos/id/1018/300/200',
+      coverImage: mockimageurl,
     },
     {
       title: 'Programacao Web',
       type: 'Artigo',
-      coverImage: 'https://picsum.photos/id/1018/300/200',
+      coverImage: mockimageurl,
     },
     {
       title: 'Programacao Web',
       type: 'Artigo',
-      coverImage: 'https://picsum.photos/id/1018/300/200',
+      coverImage: mockimageurl,
     },
     {
       title: 'Programacao Web',
       type: 'Artigo',
-      coverImage: 'https://picsum.photos/id/1018/300/200',
+      coverImage: mockimageurl,
     },
   ];
 

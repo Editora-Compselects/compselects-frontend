@@ -1,0 +1,1 @@
+export const mockimageurl = "https://www.arthistoryproject.com/site/assets/files/10235/wenzel-hablik-starry-sky-attempt-1909-obelisk-art-history.jpg";
