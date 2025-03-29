@@ -12,7 +12,8 @@ export const Sobre = () => {
                     <Box p={8} textAlign={"center"} alignContent={"center"}>
                         <Text fontSize={"3xl"}>A Editora</Text>
                         <Text textAlign={"justify"} mt={8} fontSize={"lg"}>{texto}</Text>
-                        <Text textAlign={"justify"} mt={8} fontSize={"lg"}>Quer saber mais sobre a Compselects? Explore nossa aba <Span cursor={"pointer"} color={"#1353A6"}>Sobre Nós</Span>!</Text>
+                        <Text textAlign={"justify"} mt={8} fontSize={"lg"}>
+                            Quer saber mais sobre a Compselects? Explore nossa aba <Span textDecor={"underline"} cursor={"pointer"} color={"#2767BA"}>Sobre Nós</Span>!</Text>
                     </Box>
                     <Flex>
                         <Separator orientation={"vertical"}></Separator>

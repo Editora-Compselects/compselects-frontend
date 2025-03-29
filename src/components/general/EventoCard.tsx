@@ -20,7 +20,7 @@ export const EventoCard = ({
     inscricao,
 }:EventoProps) => {
     return (
-            <Card.Root maxW="sm" overflow="hidden" m={2} w={"25vw"} rounded={"xs"} boxShadow={"md"}>
+            <Card.Root maxW="sm" overflow="hidden" m={2} w={"25vw"} rounded={"xs"} boxShadow={"md"} className="holographic-card">
                 <Image
                     src={mockimageurl}
                 />

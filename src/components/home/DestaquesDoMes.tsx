@@ -46,8 +46,7 @@ export const DestaquesDoMes = () => {
         <Text fontSize="3xl" fontWeight="bold" textAlign="center" mb={8}>
             Publicações em destaque
         </Text>
-        
-        {/* Carrossel de publicações */}
+
         <Box
             w={"100vw"}
             className="flex transition-transform duration-500 ease-in-out"
@@ -59,12 +58,11 @@ export const DestaquesDoMes = () => {
                 className="flex-shrink-0"
                 mx={2}
                 w={"99vw"}
-                h={"70vh"}
-                cursor={"pointer"}
+                h={"76vh"}
                 p={10}
                 >
                   <Flex>
-                    <Image src={publication.coverImage} h={"60vh"} fit={"cover"} aspectRatio={"portrait"}></Image>
+                    <Image cursor={"pointer"} className='holographic-card' src={publication.coverImage} h={"66vh"} w={"90vw"} fit={"cover"}></Image>
                     <Box ml={8}>
                       <Flex h={"full"} alignItems={"center"} justifyContent={"space-around"} flexDirection={"column"}>
                         <div>
@@ -80,7 +78,6 @@ export const DestaquesDoMes = () => {
             ))}
         </Box>
 
-        {/* Botões de navegação */}
         <IconButton
             aria-label="Previous publication"
             onClick={prevPublication}

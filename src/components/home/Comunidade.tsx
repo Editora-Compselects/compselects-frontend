@@ -68,9 +68,11 @@ export const Comunidade = () => {
             <Box color={"#EFF4FD"} bgColor={"#0B1436"} p={8} pb={16}>
                 <Text fontSize="3xl" fontWeight="bold" textAlign="center" mb={8}>Nossa Comunidade</Text>
 
-                <Flex flexWrap={"wrap"} gap={6} justifyContent={"center"}>
+                <Flex wrap={"wrap"} gap={6} justifyContent={"center"}>
                     <For each={depoimentos}>
-                        {(item) =><DepoimentoCard nome={item.nome} email={item.email} tipo={item.tipo} foto={item.foto} comentario={item.comentario}/>}
+                        {(item) =>
+                        <DepoimentoCard nome={item.nome} email={item.email} tipo={item.tipo} foto={item.foto} comentario={item.comentario}/>
+                        }
                     </For>
                 </Flex>
             </Box>

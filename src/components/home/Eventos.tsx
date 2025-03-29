@@ -70,14 +70,15 @@ export const Eventos = () => {
 
   return (
     <Box bgColor={"white"} color={"#262A38"} pb={10} pt={8}>
-        <Box className="relative w-full overflow-hidden" >
+        <Box className="relative w-full" >
         <Text fontSize="3xl" fontWeight="bold" textAlign="center" mb={8}>
-            Best-Sellers da Compselects
+            Eventos e Conferências
         </Text>
         
         {/* Carrossel de publicações */}
         <Box
             w={"100vw"}
+            h={"full"}
             className="flex transition-transform duration-500 ease-in-out"
             style={{ transform: `translateX(-${currentIndex * 20}%)` }}
         >
