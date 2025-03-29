@@ -10,7 +10,7 @@ export const Comunidade = () => {
             email: "usuario@email.com",
             tipo: "leitor",
             foto: mockimageurl,
-            comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus. Praesent quis dolor dictum, tincidunt nisl sit amet, ultrices est."
+            comentario: "a rhoncus. Praesent quis dolor dictum, tincidunt nisl sit amet, ultrices est."
         },
         {
             nome: "Usuario",

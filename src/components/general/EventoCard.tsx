@@ -22,7 +22,7 @@ export const EventoCard = ({
     return (
             <Card.Root maxW="sm" overflow="hidden" m={2} w={"25vw"} rounded={"xs"} boxShadow={"md"} className="holographic-card">
                 <Image
-                    src={mockimageurl}
+                    src={foto}
                 />
                 <Card.Body gap="2">
                     <Card.Title fontSize={"xl"}>{nome}</Card.Title>
