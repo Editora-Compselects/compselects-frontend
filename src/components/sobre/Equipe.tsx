@@ -60,7 +60,7 @@ export const Equipe = () => {
                     <Flex wrap={"wrap"} justifyContent={"center"} gap={6}>
                         {publications.map((item) => (
                             <Box>
-                                <PerfilCard nome={item.nome} foto={item.foto} funcao={item.funcao} email={item.email} descricao={item.descricao} />
+                                <PerfilCard autor={false} nome={item.nome} foto={item.foto} funcao={item.funcao} email={item.email} descricao={item.descricao} />
                             </Box>
                         ))}
                     </Flex>
