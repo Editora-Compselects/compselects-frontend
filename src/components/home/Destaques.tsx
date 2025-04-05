@@ -8,9 +8,15 @@ export const Destaques = () => {
   return (
     <Box>
         <AtalhosHomePage/>
-        <Lancamentos/>
-        <DestaquesDoMes/>
-        <BestSellers/>
+        <div id='lancamentos'>
+          <Lancamentos/>
+        </div>
+        <div id='destaques'>
+          <DestaquesDoMes/>
+        </div>
+        <div id='best-sellers'>
+          <BestSellers/>
+        </div>
     </Box>
   );
 };

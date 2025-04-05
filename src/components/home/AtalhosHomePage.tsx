@@ -1,8 +1,8 @@
 import { Box, Text, Card, Flex, Image } from '@chakra-ui/react';
 import { mockimageurl } from '../../util/imageUrls';
+import { useNavigate } from 'react-router-dom';
 
 export const AtalhosHomePage = () => {
-
     const cardW = "full"
 
   return (
@@ -12,44 +12,54 @@ export const AtalhosHomePage = () => {
         </Text>
         <Flex mx={"10vw"} gap={10}>
             <Box cursor={"pointer"} w={cardW} justifyItems={"center"}>
-                <Card.Root rounded={"xs"} className='cardShadow holographic-card' >
-                    <Card.Body p={0} aspectRatio={"square"}>
-                        <Image w={"full"} h={"full"} src={mockimageurl}></Image>
-                    </Card.Body>
-                </Card.Root>
-                <Text mt={3} fontSize={"xl"} fontWeight={"bold"}>Best Sellers</Text>
+                <a href='#best-sellers'>
+                    <Card.Root rounded={"xs"} className='cardShadow holographic-card' >
+                        <Card.Body p={0} aspectRatio={"square"}>
+                            <Image w={"full"} h={"full"} src={mockimageurl}></Image>
+                        </Card.Body>
+                    </Card.Root>
+                    <Text mt={3} fontSize={"xl"} fontWeight={"bold"}>Best Sellers</Text>
+                </a>
             </Box>
             <Box cursor={"pointer"} w={cardW} justifyItems={"center"}>
-                <Card.Root rounded={"xs"} className='cardShadow holographic-card' >
-                    <Card.Body p={0} aspectRatio={"square"}>
-                        <Image w={"full"} h={"full"} src={mockimageurl}></Image>
-                    </Card.Body>
-                </Card.Root>
-                <Text mt={3} fontSize={"xl"} fontWeight={"bold"}>Lançamentos</Text>
+                <a href='#lancamentos'>
+                    <Card.Root rounded={"xs"} className='cardShadow holographic-card' >
+                        <Card.Body p={0} aspectRatio={"square"}>
+                            <Image w={"full"} h={"full"} src={mockimageurl}></Image>
+                        </Card.Body>
+                    </Card.Root>
+                    <Text mt={3} fontSize={"xl"} fontWeight={"bold"}>Lançamentos</Text>
+                </a>
             </Box>
             <Box cursor={"pointer"} w={cardW} justifyItems={"center"}>
-                <Card.Root rounded={"xs"} className='cardShadow holographic-card' >
-                    <Card.Body p={0} aspectRatio={"square"}>
-                        <Image w={"full"} h={"full"} src={mockimageurl}></Image>
-                    </Card.Body>
-                </Card.Root>
-                <Text mt={3} fontSize={"xl"} fontWeight={"bold"}>Destaques</Text>
+                <a href='#destaques'>
+                    <Card.Root rounded={"xs"} className='cardShadow holographic-card' >
+                        <Card.Body p={0} aspectRatio={"square"}>
+                            <Image w={"full"} h={"full"} src={mockimageurl}></Image>
+                        </Card.Body>
+                    </Card.Root>
+                    <Text mt={3} fontSize={"xl"} fontWeight={"bold"}>Destaques</Text>
+                </a>
             </Box>
             <Box cursor={"pointer"} w={cardW} justifyItems={"center"}>
-                <Card.Root rounded={"xs"} className='cardShadow holographic-card' >
-                    <Card.Body p={0} aspectRatio={"square"}>
-                        <Image w={"full"} h={"full"} src={mockimageurl}></Image>
-                    </Card.Body>
-                </Card.Root>
-                <Text mt={3} fontSize={"xl"} fontWeight={"bold"}>Nossos autores</Text>
+                <a href='/autores'>
+                    <Card.Root rounded={"xs"} className='cardShadow holographic-card' >
+                        <Card.Body p={0} aspectRatio={"square"}>
+                            <Image w={"full"} h={"full"} src={mockimageurl}></Image>
+                        </Card.Body>
+                    </Card.Root>
+                    <Text mt={3} fontSize={"xl"} fontWeight={"bold"}>Nossos autores</Text>
+                </a>
             </Box>
             <Box cursor={"pointer"} w={cardW} justifyItems={"center"}>
-                <Card.Root rounded={"xs"} className='cardShadow holographic-card' >
-                    <Card.Body p={0} aspectRatio={"square"}>
-                        <Image w={"full"} h={"full"} src={mockimageurl}></Image>
-                    </Card.Body>
-                </Card.Root>
-                <Text mt={3} fontSize={"xl"} fontWeight={"bold"}>Todas as publicações</Text>
+                <a href='/publicacoes'>
+                    <Card.Root rounded={"xs"} className='cardShadow holographic-card' >
+                        <Card.Body p={0} aspectRatio={"square"}>
+                            <Image w={"full"} h={"full"} src={mockimageurl}></Image>
+                        </Card.Body>
+                    </Card.Root>
+                    <Text mt={3} fontSize={"xl"} fontWeight={"bold"}>Todas as publicações</Text>
+                </a>
             </Box>
         </Flex>
     </Box>

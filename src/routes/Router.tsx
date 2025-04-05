@@ -25,11 +25,11 @@ export const PublicRoutes: RouteObject[] = [
             //{ path: 'contato', element: <Contato /> },
             //{ path: 'publicacoes', element: <Publicacoes /> },
             //{ path: 'publicacoes/:id', element: <PublicacaoItem /> },
-            { path: 'home', element: <Home /> },
-            { path: 'eventos', element: <Eventos /> },
-            { path: 'eventos/:id', element: <EventoItem /> },
-            { path: 'sobre', element: <Sobre /> },
-            { path: 'submissoes', element: <Submissoes /> },
+            { path: '/home', element: <Home /> },
+            { path: '/eventos', element: <Eventos /> },
+            { path: "/eventos/:id", element: <EventoItem /> },
+            { path: '/sobre', element: <Sobre /> },
+            { path: '/submissoes', element: <Submissoes /> },
             { path: '*', element: <Navigate to="/home" replace /> },
         ]
     }
