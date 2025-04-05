@@ -5,7 +5,7 @@ import { Eventos } from '../components/home/Eventos';
 import { Sobre } from '../components/home/Sobre';
 import { Comunidade } from '../components/home/Comunidade';
 import { Newsletter } from '../components/home/Newsletter';
-
+ 
 const Home = () => {
   return (
     <Box>

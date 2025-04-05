@@ -11,9 +11,9 @@ createRoot(document.getElementById('root')!).render(
   <StrictMode>
 		<Provider>
       <Theme colorPalette={"blue.800"}>
-        <NavBar/>
+        
         <App />
-        <Footer/>
+        
       </Theme>
     </Provider>
   </StrictMode>,

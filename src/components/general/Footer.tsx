@@ -1,8 +1,11 @@
 import { Box, Link, Text, Grid, Flex } from "@chakra-ui/react"
 import { BookCopy, Mail, Phone } from "lucide-react"
 import { FaFacebook, FaInstagram } from "react-icons/fa"
+import { useNavigate } from "react-router-dom";
 
 export const Footer = () => {
+    const navigate = useNavigate();
+    
     return (
         <>
             <Box bg="#1353A6" color="#EFF4FD" py={8}>
@@ -17,16 +20,16 @@ export const Footer = () => {
                     </Box>
                     <Box display={"grid"} className="grid-cols-2">
                         <Flex flexDirection={"column"}>
-                            <Link color={"#EFF4FD"} href="#">Home</Link>
-                            <Link color={"#EFF4FD"} href="#">Sobre Nós</Link>
-                            <Link color={"#EFF4FD"} href="#">Publicações</Link>
-                            <Link color={"#EFF4FD"} href="#">Autores</Link>
+                            <Link color={"#EFF4FD"} href="#" onClick={()=>navigate("/home")}>Home</Link>
+                            <Link color={"#EFF4FD"} href="#" onClick={()=>navigate("/sobre")}>Sobre Nós</Link>
+                            <Link color={"#EFF4FD"} href="#" onClick={()=>navigate("/publicacoes")}>Publicações</Link>
+                            <Link color={"#EFF4FD"} href="#" onClick={()=>navigate("/autores")}>Autores</Link>
                         </Flex>
                         <Flex flexDirection={"column"}>
-                            <Link color={"#EFF4FD"} href="#">Submissões</Link>
-                            <Link color={"#EFF4FD"} href="#">Eventos</Link>
-                            <Link color={"#EFF4FD"} href="#">Blog</Link>
-                            <Link color={"#EFF4FD"} href="#">Contato</Link>
+                            <Link color={"#EFF4FD"} href="#" onClick={()=>navigate("/submissoes")}>Submissões</Link>
+                            <Link color={"#EFF4FD"} href="#" onClick={()=>navigate("/eventos")}>Eventos</Link>
+                            <Link color={"#EFF4FD"} href="#" onClick={()=>navigate("/blog")}>Blog</Link>
+                            <Link color={"#EFF4FD"} href="#" onClick={()=>navigate("/contato")}>Contato</Link>
                         </Flex>
                     </Box>
                     <Box>

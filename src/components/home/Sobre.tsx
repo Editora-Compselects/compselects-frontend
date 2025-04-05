@@ -1,9 +1,11 @@
 import { Box, Flex, Grid,Image,Separator,Span,Text } from "@chakra-ui/react"
 import { mockimageurl } from "../../util/imageUrls"
+import { useNavigate } from "react-router-dom";
 
 export const Sobre = () => {
 
     const texto = "Donec eget turpis at metus ornare aliquam. Curabitur molestie porttitor dui vitae malesuada. Cras dignissim quam id lectus placerat elementum. Sed laoreet purus malesuada ligula convallis porta. Fusce mollis, urna commodo rhoncus consectetur, neque erat bibendum nisl, fermentum placerat est tortor bibendum justo. Aenean mattis, ex nec consectetur faucibus, quam eros semper velit, et luctus nunc tortor ac ipsum. Morbi tellus risus, sodales a nisl vitae, scelerisque ultrices augue. Duis varius, massa sed lobortis egestas, mauris libero fermentum turpis, luctus interdum nibh quam a tellus. Quisque mollis ipsum in convallis laoreet. Nam ullamcorper accumsan quam, non aliquam velit porttitor a. Donec porta tincidunt nibh, nec commodo dui bibendum nec. Pellentesque tempus cursus tortor et consectetur. Aliquam imperdiet sit amet est eu blandit. Duis elementum felis ut lacus dignissim lobortis."
+    const navigate = useNavigate();
 
     return (
         <>
@@ -13,7 +15,7 @@ export const Sobre = () => {
                         <Text fontSize={"3xl"}>A Editora</Text>
                         <Text textAlign={"justify"} mt={8} fontSize={"lg"}>{texto}</Text>
                         <Text textAlign={"justify"} mt={8} fontSize={"lg"}>
-                            Quer saber mais sobre a Compselects? Explore nossa aba <Span textDecor={"underline"} cursor={"pointer"} color={"#2767BA"}>Sobre Nós</Span>!</Text>
+                            Quer saber mais sobre a Compselects? Explore nossa aba <Span textDecor={"underline"} cursor={"pointer"} color={"#2767BA"} onClick={()=>navigate("/sobre")}>Sobre Nós</Span>!</Text>
                     </Box>
                     <Flex>
                         <Separator orientation={"vertical"}></Separator>
