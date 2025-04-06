@@ -20,7 +20,7 @@ export const MiniPublicacao = (
             >
             <Image className='non-holographic-card' src={item.coverImage} aspectRatio={"portrait"} fit={"cover"} w={"100vw"}></Image>
             <Text lineClamp={1} fontSize={"xl"} mt={2}>{item.title}</Text>
-            <Text lineClamp={1}>{item.author}</Text>
+            <Text color="fg.muted" lineClamp={1}>{item.author}</Text>
             </Box>
         </>
     )

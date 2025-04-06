@@ -34,7 +34,7 @@ export const DetalhesEvento = ({
                                 </Breadcrumb.Item>
                                 <Breadcrumb.Separator />
                                 <Breadcrumb.Item>
-                                <Breadcrumb.Link href={`/eventos/${nome}`}>{nome}</Breadcrumb.Link>
+                                <Breadcrumb.Link href={`#`}>{nome}</Breadcrumb.Link>
                                 </Breadcrumb.Item>
                             </Breadcrumb.List>
                         </Breadcrumb.Root>

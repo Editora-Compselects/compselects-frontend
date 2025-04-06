@@ -16,7 +16,7 @@ export const GradePublicacoes = () => {
                 <Grid className="grid-cols-5">
                     <Flex py={8} pl={8} justifyContent={"space-between"}>
                         <Box w={"90%"}>
-                            <Text mb={4} justifySelf={"center"} fontSize={"xl"}>Buscar Publicações</Text>
+                            <Text mb={4} mt={1} justifySelf={"center"} fontSize={"xl"}>Buscar Publicações</Text>
 
                             <Box h={"76vh"} overflowY={"auto"} pb={12}>
                                 <Text justifySelf={"center"}>Categoria</Text>
