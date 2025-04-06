@@ -17,7 +17,7 @@ export const ApresentacaoPublicacao = (
     return(
         <>
             <Grid className="grid-cols-5">
-                <Image src={item.coverImage} aspectRatio={"portrait"} fit={"cover"} w={"100vw"}></Image>
+                <Image alignSelf={"center"} src={item.coverImage} aspectRatio={"portrait"} fit={"cover"} w={"100vw"}></Image>
                 <Box ml={8} className="col-span-3">
                     <Flex alignContent={"space-between"} flexDirection={"column"}>
                         <div>
@@ -25,7 +25,10 @@ export const ApresentacaoPublicacao = (
                                 <Text fontSize={"3xl"}>{item.title}</Text>
                             </Flex>
                             <Text>{item.type} por {item.author}</Text>
-                            <Text mt={8} textAlign={"justify"}>{item.summary}</Text>
+                            <Text mt={8} fontSize={"xl"}>Sumário da obra:</Text>
+                            <Text textAlign={"justify"}>{item.summary}</Text>
+                            <Text mt={8} fontSize={"xl"}>Sobre o autor:</Text>
+                            <Text textAlign={"justify"}>{item.sobreOautor}</Text>
                         </div>
                     </Flex>
                 </Box>
