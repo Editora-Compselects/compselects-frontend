@@ -1,54 +1,8 @@
-import { Box, Flex, Grid,Image,Separator,Span,Text } from "@chakra-ui/react"
-import { mockimageurl } from "../../util/imageUrls"
-import { EventoCard } from "../general/EventoCard"
+import { Box, Flex, Text } from "@chakra-ui/react"
 import { PerfilCard } from "../general/PerfilCard"
+import { ourTeam } from "../../util/mocks"
 
 export const Equipe = () => {
-
-    const publications = [
-        {
-            nome: "Pessoa 1",
-            foto: mockimageurl,
-            funcao: "editor",
-            email: "pessoa@email.com",
-            descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus."
-        },
-        {
-            nome: "Pessoa 1",
-            foto: mockimageurl,
-            funcao: "editor",
-            email: "pessoa@email.com",
-            descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus."
-        },
-        {
-            nome: "Pessoa 1",
-            foto: mockimageurl,
-            funcao: "editor",
-            email: "pessoa@email.com",
-            descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus."
-        },
-        {
-            nome: "Pessoa 1",
-            foto: mockimageurl,
-            funcao: "editor",
-            email: "pessoa@email.com",
-            descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus."
-        },
-        {
-            nome: "Pessoa 1",
-            foto: mockimageurl,
-            funcao: "editor",
-            email: "pessoa@email.com",
-            descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus."
-        },
-        {
-            nome: "Pessoa 1",
-            foto: mockimageurl,
-            funcao: "editor",
-            email: "pessoa@email.com",
-            descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus."
-        },
-    ]
     
     return (
         <>
@@ -58,7 +12,7 @@ export const Equipe = () => {
                         Quem somos?
                     </Text>
                     <Flex wrap={"wrap"} justifyContent={"center"} gap={6}>
-                        {publications.map((item) => (
+                        {ourTeam.map((item) => (
                             <Box>
                                 <PerfilCard autor={false} nome={item.nome} foto={item.foto} funcao={item.funcao} email={item.email} descricao={item.descricao} />
                             </Box>

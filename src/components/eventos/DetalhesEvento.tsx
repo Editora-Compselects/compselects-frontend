@@ -1,5 +1,4 @@
-import { Box, Breadcrumb, Flex, Grid,Image,Separator,Span,Text } from "@chakra-ui/react"
-import { mockimageurl } from "../../util/imageUrls"
+import { Box, Breadcrumb, Flex, Grid,Image,Separator,Text } from "@chakra-ui/react"
 
 export interface EventoProps {
     nome: string;
@@ -18,8 +17,6 @@ export const DetalhesEvento = ({
     local,
     inscricao,
 }:EventoProps) => {
-
-    const texto = "Donec eget turpis at metus ornare aliquam. Curabitur molestie porttitor dui vitae malesuada. Cras dignissim quam id lectus placerat elementum. Sed laoreet purus malesuada ligula convallis porta. Fusce mollis, urna commodo rhoncus consectetur, neque erat bibendum nisl, fermentum placerat est tortor bibendum justo. Aenean mattis, ex nec consectetur faucibus, quam eros semper velit, et luctus nunc tortor ac ipsum. Morbi tellus risus, sodales a nisl vitae, scelerisque ultrices augue. Duis varius, massa sed lobortis egestas, mauris libero fermentum turpis, luctus interdum nibh quam a tellus. Quisque mollis ipsum in convallis laoreet. Nam ullamcorper accumsan quam, non aliquam velit porttitor a. Donec porta tincidunt nibh, nec commodo dui bibendum nec. Pellentesque tempus cursus tortor et consectetur. Aliquam imperdiet sit amet est eu blandit. Duis elementum felis ut lacus dignissim lobortis."
 
     return (
         <>
@@ -47,7 +44,7 @@ export const DetalhesEvento = ({
                             <Text textAlign={"justify"} fontSize={"lg"}>Data: {data}</Text>
                             <Text textAlign={"justify"} fontSize={"lg"}>Local: {local}</Text>
                             <Text textAlign={"justify"} fontSize={"lg"}>Inscrição: {inscricao}</Text>
-                            <Text textAlign={"justify"} fontSize={"lg"}>Agenda: {texto}</Text>
+                            <Text textAlign={"justify"} fontSize={"lg"}>Agenda: {conteudo}</Text>
                         </Flex>
                     </Box>
                 </Grid>

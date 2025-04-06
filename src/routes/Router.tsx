@@ -9,10 +9,10 @@ import Autores from "../pages/Autores";
 import Blog from "../pages/Blog";
 import BlogPost from "../pages/BlogPost";
 import Contato from "../pages/Contato";
-import Publicacoes from "../pages/Publicacoes";
-import PublicacaoItem from "../pages/PublicacaoItem";
 */
 import Layout from "./Layout";
+import Publicacoes from "../pages/Publicacoes";
+import PublicacaoItem from "../pages/PublicacaoItem";
 
 export const PublicRoutes: RouteObject[] = [
     {
@@ -23,8 +23,8 @@ export const PublicRoutes: RouteObject[] = [
             //{ path: 'blog', element: <Blog /> },
             //{ path: 'blog/:id', element: <BlogPost /> },
             //{ path: 'contato', element: <Contato /> },
-            //{ path: 'publicacoes', element: <Publicacoes /> },
-            //{ path: 'publicacoes/:id', element: <PublicacaoItem /> },
+            { path: 'publicacoes', element: <Publicacoes /> },
+            { path: 'publicacoes/:id', element: <PublicacaoItem /> },
             { path: '/home', element: <Home /> },
             { path: '/eventos', element: <Eventos /> },
             { path: "/eventos/:id", element: <EventoItem /> },

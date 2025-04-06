@@ -1,43 +1,19 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Box, Text, IconButton, Image, Flex, Button } from '@chakra-ui/react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import { mockimageurl } from '../../util/imageUrls';
+import { destaques } from '../../util/mocks';
 
 export const DestaquesDoMes = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  
-  const publications = [
-    {
-      title: 'Programacao Web',
-      type: 'livro',
-      author: 'Demetrio Mestre',
-      summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus. Praesent quis dolor dictum, tincidunt nisl sit amet, ultrices est. Aliquam erat volutpat. Fusce iaculis nulla sapien, at bibendum turpis tincidunt et. In ullamcorper justo justo, ut pulvinar mi fringilla in. Cras sem elit, tempor eget turpis sed, auctor mollis tellus. Etiam ut arcu sed nunc semper sollicitudin. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse potenti.',
-      coverImage: mockimageurl,
-    },
-    {
-      title: 'Programacao Web',
-      type: 'artigo',
-      author: 'Demetrio Mestre',
-      summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus. Praesent quis dolor dictum, tincidunt nisl sit amet, ultrices est. Aliquam erat volutpat. Fusce iaculis nulla sapien, at bibendum turpis tincidunt et. In ullamcorper justo justo, ut pulvinar mi fringilla in. Cras sem elit, tempor eget turpis sed, auctor mollis tellus. Etiam ut arcu sed nunc semper sollicitudin. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse potenti.',
-      coverImage: mockimageurl,
-    },
-    {
-      title: 'Programacao Web',
-      type: 'periódico',
-      author: 'Demetrio Mestre',
-      summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus. Praesent quis dolor dictum, tincidunt nisl sit amet, ultrices est. Aliquam erat volutpat. Fusce iaculis nulla sapien, at bibendum turpis tincidunt et. In ullamcorper justo justo, ut pulvinar mi fringilla in. Cras sem elit, tempor eget turpis sed, auctor mollis tellus. Etiam ut arcu sed nunc semper sollicitudin. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse potenti.',
-      coverImage: mockimageurl,
-    },
-  ];
 
-  const totalPublications = publications.length;
+  const totaldestaques = destaques.length;
 
   const nextPublication = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % (totalPublications));
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % (totaldestaques));
   };
 
   const prevPublication = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? totalPublications :prevIndex - 1) % totalPublications);
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? totaldestaques :prevIndex - 1) % totaldestaques);
   };
 
   return (
@@ -52,7 +28,7 @@ export const DestaquesDoMes = () => {
             className="flex transition-transform duration-500 ease-in-out"
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
-            {publications.map((publication, index) => (
+            {destaques.map((publication, index) => (
                 <Box
                 key={index}
                 className="flex-shrink-0"

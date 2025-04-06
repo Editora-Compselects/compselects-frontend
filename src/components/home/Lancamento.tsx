@@ -1,77 +1,19 @@
 import { useState } from 'react';
 import { Box, Text, IconButton, Image } from '@chakra-ui/react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import { mockimageurl } from '../../util/imageUrls';
+import { lancamentos } from '../../util/mocks';
 
 export const Lancamentos = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  
-  const publications = [
-    {
-      title: 'Programacao Web',
-      type: 'Livro',
-      coverImage: mockimageurl,
-    },
-    {
-      title: 'Programacao Web',
-      type: 'Livro',
-      coverImage: mockimageurl,
-    },
-    {
-      title: 'Programacao Web',
-      type: 'Livro',
-      coverImage: mockimageurl,
-    },
-    {
-      title: 'Programacao Web',
-      type: 'Livro',
-      coverImage: mockimageurl,
-    },
-    {
-      title: 'Programacao Web',
-      type: 'Livro',
-      coverImage: mockimageurl,
-    },
-    {
-      title: 'Programacao Web',
-      type: 'Livro',
-      coverImage: mockimageurl,
-    },
-    {
-      title: 'Programacao Web',
-      type: 'Artigo',
-      coverImage: mockimageurl,
-    },
-    {
-      title: 'Programacao Web',
-      type: 'Artigo',
-      coverImage: mockimageurl,
-    },
-    {
-      title: 'Programacao Web',
-      type: 'Artigo',
-      coverImage: mockimageurl,
-    },
-    {
-      title: 'Programacao Web',
-      type: 'Artigo',
-      coverImage: mockimageurl,
-    },
-    {
-      title: 'Programacao Web',
-      type: 'Artigo',
-      coverImage: mockimageurl,
-    },
-  ];
 
-  const totalPublications = publications.length;
+  const totallancamentos = lancamentos.length;
 
   const nextPublication = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % (totalPublications-3));
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % (totallancamentos-3));
   };
 
   const prevPublication = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? totalPublications :prevIndex - 1) % totalPublications);
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? totallancamentos :prevIndex - 1) % totallancamentos);
   };
 
   return (
@@ -87,7 +29,7 @@ export const Lancamentos = () => {
             className="flex transition-transform duration-500 ease-in-out"
             style={{ transform: `translateX(-${currentIndex * 20}%)` }}
         >
-            {publications.map((publication, index) => (
+            {lancamentos.map((publication, index) => (
                 <Box
                 key={index}
                 className="flex-shrink-0"
