@@ -13,18 +13,22 @@ import Contato from "../pages/Contato";
 import Layout from "./Layout";
 import Publicacoes from "../pages/Publicacoes";
 import PublicacaoItem from "../pages/PublicacaoItem";
+import Autores from "../pages/Autores";
+import Blog from "../pages/Blog";
+import BlogPost from "../pages/BlogPost";
+import Contato from "../pages/Contato";
 
 export const PublicRoutes: RouteObject[] = [
     {
         path: '/',
         element: <Layout />,
         children: [
-            //{ path: 'autores', element: <Autores /> },
-            //{ path: 'blog', element: <Blog /> },
-            //{ path: 'blog/:id', element: <BlogPost /> },
-            //{ path: 'contato', element: <Contato /> },
-            { path: 'publicacoes', element: <Publicacoes /> },
-            { path: 'publicacoes/:id', element: <PublicacaoItem /> },
+            { path: '/autores', element: <Autores /> },
+            { path: '/blog', element: <Blog /> },
+            { path: '/blog/:id', element: <BlogPost /> },
+            { path: '/contato', element: <Contato /> },
+            { path: '/publicacoes', element: <Publicacoes /> },
+            { path: '/publicacoes/:id', element: <PublicacaoItem /> },
             { path: '/home', element: <Home /> },
             { path: '/eventos', element: <Eventos /> },
             { path: "/eventos/:id", element: <EventoItem /> },

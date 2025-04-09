@@ -13,7 +13,6 @@ export const PerfilCard = ({
     nome,
     foto,
     funcao,
-    email,
     descricao,
     autor,
 }:PerfilProps) => {

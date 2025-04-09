@@ -1,75 +1,8 @@
 import { Box,Flex,For,Text } from "@chakra-ui/react"
-import { mockimageurl } from "../../util/imageUrls"
 import { DepoimentoCard } from "../general/DepoimentoCard"
+import { depoimentos } from "../../util/mocks"
 
 export const Comunidade = () => {
-
-    const depoimentos = [
-        {
-            id:1,
-            nome: "Usuario",
-            email: "usuario@email.com",
-            tipo: "leitor",
-            foto: mockimageurl,
-            comentario: "a rhoncus. Praesent quis dolor dictum, tincidunt nisl sit amet, ultrices est."
-        },
-        {
-            id:2,
-            nome: "Usuario",
-            email: "usuario@email.com",
-            tipo: "autor",
-            foto: mockimageurl,
-            comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus. Praesent quis dolor dictum, tincidunt nisl sit amet, ultrices est."
-        },
-        {
-            id:3,
-            nome: "Usuario",
-            email: "usuario@email.com",
-            tipo: "autor",
-            foto: mockimageurl,
-            comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus. Praesent quis dolor dictum, tincidunt nisl sit amet, ultrices est."
-        },
-        {
-            id:4,
-            nome: "Usuario",
-            email: "usuario@email.com",
-            tipo: "leitor",
-            foto: mockimageurl,
-            comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus. Praesent quis dolor dictum, tincidunt nisl sit amet, ultrices est."
-        },
-        {
-            id:5,
-            nome: "Usuario",
-            email: "usuario@email.com",
-            tipo: "leitor",
-            foto: mockimageurl,
-            comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus. Praesent quis dolor dictum, tincidunt nisl sit amet, ultrices est."
-        },
-        {
-            id:6,
-            nome: "Usuario",
-            email: "usuario@email.com",
-            tipo: "leitor",
-            foto: mockimageurl,
-            comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus. Praesent quis dolor dictum, tincidunt nisl sit amet, ultrices est."
-        },
-        {
-            id:7,
-            nome: "Usuario",
-            email: "usuario@email.com",
-            tipo: "leitor",
-            foto: mockimageurl,
-            comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus. Praesent quis dolor dictum, tincidunt nisl sit amet, ultrices est."
-        },
-        {
-            id:8,
-            nome: "Usuario",
-            email: "usuario@email.com",
-            tipo: "leitor",
-            foto: mockimageurl,
-            comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus. Praesent quis dolor dictum, tincidunt nisl sit amet, ultrices est."
-        },
-    ]
 
     return (
         <>

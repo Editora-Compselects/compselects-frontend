@@ -1,5 +1,123 @@
 import { mockimageurl } from "./imageUrls";
 
+export const depoimentos = [
+    {
+        id:1,
+        nome: "Usuario",
+        email: "usuario@email.com",
+        tipo: "leitor",
+        foto: mockimageurl,
+        comentario: "a rhoncus. Praesent quis dolor dictum, tincidunt nisl sit amet, ultrices est."
+    },
+    {
+        id:2,
+        nome: "Usuario",
+        email: "usuario@email.com",
+        tipo: "autor",
+        foto: mockimageurl,
+        comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus. Praesent quis dolor dictum, tincidunt nisl sit amet, ultrices est."
+    },
+    {
+        id:3,
+        nome: "Usuario",
+        email: "usuario@email.com",
+        tipo: "autor",
+        foto: mockimageurl,
+        comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus. Praesent quis dolor dictum, tincidunt nisl sit amet, ultrices est."
+    },
+    {
+        id:4,
+        nome: "Usuario",
+        email: "usuario@email.com",
+        tipo: "leitor",
+        foto: mockimageurl,
+        comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus. Praesent quis dolor dictum, tincidunt nisl sit amet, ultrices est."
+    },
+    {
+        id:5,
+        nome: "Usuario",
+        email: "usuario@email.com",
+        tipo: "leitor",
+        foto: mockimageurl,
+        comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus. Praesent quis dolor dictum, tincidunt nisl sit amet, ultrices est."
+    },
+    {
+        id:6,
+        nome: "Usuario",
+        email: "usuario@email.com",
+        tipo: "leitor",
+        foto: mockimageurl,
+        comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus. Praesent quis dolor dictum, tincidunt nisl sit amet, ultrices est."
+    },
+    {
+        id:7,
+        nome: "Usuario",
+        email: "usuario@email.com",
+        tipo: "leitor",
+        foto: mockimageurl,
+        comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus. Praesent quis dolor dictum, tincidunt nisl sit amet, ultrices est."
+    },
+    {
+        id:8,
+        nome: "Usuario",
+        email: "usuario@email.com",
+        tipo: "leitor",
+        foto: mockimageurl,
+        comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus. Praesent quis dolor dictum, tincidunt nisl sit amet, ultrices est."
+    },
+]
+
+export const depoimentosAutores = [
+    {
+        id:1,
+        nome: "Usuario",
+        email: "usuario@email.com",
+        tipo: "autor",
+        foto: mockimageurl,
+        comentario: "a rhoncus. Praesent quis dolor dictum, tincidunt nisl sit amet, ultrices est."
+    },
+    {
+        id:2,
+        nome: "Usuario",
+        email: "usuario@email.com",
+        tipo: "autor",
+        foto: mockimageurl,
+        comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus. Praesent quis dolor dictum, tincidunt nisl sit amet, ultrices est."
+    },
+    {
+        id:3,
+        nome: "Usuario",
+        email: "usuario@email.com",
+        tipo: "autor",
+        foto: mockimageurl,
+        comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus. Praesent quis dolor dictum, tincidunt nisl sit amet, ultrices est."
+    },
+    {
+        id:4,
+        nome: "Usuario",
+        email: "usuario@email.com",
+        tipo: "autor",
+        foto: mockimageurl,
+        comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus. Praesent quis dolor dictum, tincidunt nisl sit amet, ultrices est."
+    },
+    {
+        id:5,
+        nome: "Usuario",
+        email: "usuario@email.com",
+        tipo: "autor",
+        foto: mockimageurl,
+        comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus. Praesent quis dolor dictum, tincidunt nisl sit amet, ultrices est."
+    },
+    {
+        id:6,
+        nome: "Usuario",
+        email: "usuario@email.com",
+        tipo: "autor",
+        foto: mockimageurl,
+        comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus. Praesent quis dolor dictum, tincidunt nisl sit amet, ultrices est."
+    },
+]
+
   export const events = [
     {
         id: 1,
@@ -97,6 +215,65 @@ export const ourTeam = [
         nome: "Pessoa 1",
         foto: mockimageurl,
         funcao: "editor",
+        email: "pessoa@email.com",
+        descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus."
+    },
+]
+
+export const authors = [
+    {
+        nome: "Pessoa 1",
+        foto: mockimageurl,
+        funcao: "autor",
+        email: "pessoa@email.com",
+        descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus."
+    },
+    {
+        nome: "Pessoa 1",
+        foto: mockimageurl,
+        funcao: "autor",
+        email: "pessoa@email.com",
+        descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus."
+    },
+    {
+        nome: "Pessoa 1",
+        foto: mockimageurl,
+        funcao: "autor",
+        email: "pessoa@email.com",
+        descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus."
+    },
+    {
+        nome: "Pessoa 1",
+        foto: mockimageurl,
+        funcao: "autor",
+        email: "pessoa@email.com",
+        descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus."
+    },
+    {
+        nome: "Pessoa 1",
+        foto: mockimageurl,
+        funcao: "autor",
+        email: "pessoa@email.com",
+        descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus."
+    },
+    {
+        nome: "Pessoa 1",
+        foto: mockimageurl,
+        funcao: "autor",
+        email: "pessoa@email.com",
+        descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus."
+    },
+    {
+        nome: "Pessoa 1",
+        foto: mockimageurl,
+        funcao: "autor",
+        email: "pessoa@email.com",
+        descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus."
+    },
+    {
+        nome: "Pessoa 1",
+        foto: mockimageurl,
+        funcao: "autor",
         email: "pessoa@email.com",
         descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus."
     },
