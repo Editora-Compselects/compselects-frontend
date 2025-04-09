@@ -1,4 +1,4 @@
-import { Box,Breadcrumb,Image,Text } from "@chakra-ui/react";
+import { Box,Breadcrumb } from "@chakra-ui/react";
 import { useNavigate, useParams } from "react-router-dom";
 import { todasPublicacoes } from "../../util/mocks";
 import { useEffect } from "react";
@@ -7,8 +7,8 @@ import { Avaliacoes } from "./Avaliacoes";
 
 export const DetalhesPublicacao = () => {
     const navigate = useNavigate();
-    let { id } = useParams();
-    let publi = todasPublicacoes.filter(e => e.title === id)[0] || 
+    const { id } = useParams();
+    const publi = todasPublicacoes.filter(e => e.title === id)[0] || 
     {
           title: '',
           type: '',
@@ -38,7 +38,7 @@ export const DetalhesPublicacao = () => {
       if(publi.title == ""){
         navigate('/publicacoes')
       }
-    }, []);
+    }, [navigate, publi.title]);
 
     return(
         <>

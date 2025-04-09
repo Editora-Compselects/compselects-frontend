@@ -1,4 +1,4 @@
-import { Stack, RatingGroup, HStack, Avatar,Text,Image, Card, Flex, Box } from "@chakra-ui/react";
+import { Stack, RatingGroup, HStack, Avatar,Text, Card,} from "@chakra-ui/react";
 import { PublicacaoProps } from "./MiniPublicacao";
 
 export const AvaliacaoCard = (
@@ -8,7 +8,7 @@ export const AvaliacaoCard = (
 ) => {
     return(
         <>
-            <Card.Root my={6}>
+            <Card.Root my={6} boxShadow={"sm"}>
                 <Card.Body>
                     <Stack gap="4">
 
