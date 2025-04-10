@@ -9,6 +9,89 @@ export const GradePublicacoes = () => {
 
     const [filtro,setFiltro] = useState("");
 
+    const [categoriasSelecionadas, setCategoriasSelecionadas] = useState<string[]>([]);
+    const [categoriaChecked, setCategoriaChecked] = useState<boolean[]>([false,false,false])
+
+    const quantiaTema = Array.from(new Set(todasPublicacoes.map(e => e.tema))).length
+    const teamasCheckedInitialState: boolean[] = []
+    for (let i = 0; i < quantiaTema; i++) {
+        teamasCheckedInitialState.push(false)
+    }
+    const [temasSelecionados, setTemasSelecionados] = useState<string[]>([]);
+    const [temasChecked, setTemasChecked] = useState<boolean[]>(teamasCheckedInitialState)
+
+    const quantiaAnos = Array.from(new Set(todasPublicacoes.map(e => e.ano))).length
+    const anosCheckedInitialState: boolean[] = []
+    for (let i = 0; i < quantiaAnos; i++) {
+        anosCheckedInitialState.push(false)
+    }
+    const [anosSelecionados, setAnosSelecionados] = useState<number[]>([]);
+    const [anosChecked, setAnosChecked] = useState<boolean[]>(anosCheckedInitialState);
+
+    const handleCategoriaCheckbox = (index: number, categoria: string) => {
+        setCategoriaChecked(prev => {
+            const novoEstado = [...prev];
+            novoEstado[index] = !prev[index];
+            return novoEstado;
+        });
+
+        setCategoriasSelecionadas(prev => {
+            if (prev.includes(categoria)) {
+                return prev.filter(c => c !== categoria);
+            } else {
+                return [...prev, categoria];
+            }
+        });
+    };
+
+    const handleTemaCheckbox = (index: number, tema: string) => {
+        setTemasChecked(prev => {
+            const novoEstado = [...prev];
+            novoEstado[index] = !prev[index];
+            return novoEstado;
+        });
+
+        setTemasSelecionados(prev => {
+            if (prev.includes(tema)) {
+                return prev.filter(c => c !== tema);
+            } else {
+                return [...prev, tema];
+            }
+        });
+    };
+
+    const handleAnoCheckbox = (index: number, ano: number) => {
+        setAnosChecked(prev => {
+            const novoEstado = [...prev];
+            novoEstado[index] = !prev[index];
+            return novoEstado;
+        });
+
+        setAnosSelecionados(prev => {
+            if (prev.includes(ano)) {
+                return prev.filter(c => c !== ano);
+            } else {
+                return [...prev, ano];
+            }
+        });
+    };
+
+    const publicacoesFiltradas = todasPublicacoes.filter(pub => {
+        const correspondeTexto =
+            pub.title.toLowerCase().includes(filtro.toLowerCase()) ||
+            pub.author.toLowerCase().includes(filtro.toLowerCase());
+
+        const correspondeCategoria =
+            categoriasSelecionadas.length === 0 || categoriasSelecionadas.includes(pub.type);
+
+        const correspondeTema =
+            temasSelecionados.length === 0 || temasSelecionados.includes(pub.tema);
+
+        const correspondeAno =
+            anosSelecionados.length === 0 || anosSelecionados.includes(pub.ano);
+
+        return correspondeTexto && correspondeCategoria && correspondeTema && correspondeAno;
+    });
 
     return (
         <>
@@ -21,50 +104,51 @@ export const GradePublicacoes = () => {
                             <Box h={"76vh"} overflowY={"auto"} pb={12}>
                                 <Text justifySelf={"center"}>Categoria</Text>
                                 <Stack mt={2}>
-                                    <Checkbox.Root>
-                                        <Checkbox.HiddenInput />
-                                        <Checkbox.Control />
-                                        <Checkbox.Label>Livros</Checkbox.Label>
-                                    </Checkbox.Root>
-
-                                    <Checkbox.Root>
-                                        <Checkbox.HiddenInput />
-                                        <Checkbox.Control />
-                                        <Checkbox.Label>Artigos</Checkbox.Label>
-                                    </Checkbox.Root>
-
-                                    <Checkbox.Root>
-                                        <Checkbox.HiddenInput />
-                                        <Checkbox.Control />
-                                        <Checkbox.Label>Periódicos</Checkbox.Label>
-                                    </Checkbox.Root>
+                                    {["Livro","Artigo","Periódico"].map((categoria, index) => (
+                                        <Checkbox.Root 
+                                        key={categoria}
+                                        checked={categoriaChecked[index]}
+                                        onCheckedChange={() =>
+                                            handleCategoriaCheckbox(index, categoria)
+                                        }>
+                                            <Checkbox.HiddenInput />
+                                            <Checkbox.Control />
+                                            <Checkbox.Label>{categoria}</Checkbox.Label>
+                                        </Checkbox.Root>
+                                    ))}
                                 </Stack>
                                 <Separator mt={4}/>
                                 <Text mt={4} justifySelf={"center"}>Tema</Text>
                                 <Stack mt={2}>
-                                    <For each={Array.from(new Set(todasPublicacoes.map(e => e.tema)))}>
-                                        {tema=>
-                                        <Checkbox.Root>
+                                    {Array.from(new Set(todasPublicacoes.map(e => e.tema))).map((tema, index) => (
+                                        <Checkbox.Root 
+                                        key={tema}
+                                        checked={temasChecked[index]}
+                                        onCheckedChange={() =>
+                                            handleTemaCheckbox(index, tema)
+                                        }>
                                             <Checkbox.HiddenInput />
                                             <Checkbox.Control />
                                             <Checkbox.Label>{tema}</Checkbox.Label>
                                         </Checkbox.Root>
-                                    }
-                                    </For>
-                                    
+                                    ))}
                                 </Stack>
                                 <Separator mt={4}/>
                                 <Text mt={4} justifySelf={"center"}>Ano</Text>
                                 <Stack mt={2}>
-                                    <For each={Array.from(new Set(todasPublicacoes.map(e => e.ano)))}>
-                                        {tema=>
-                                        <Checkbox.Root>
+                                    {Array.from(new Set(todasPublicacoes.map(e => e.ano))).map((ano, index) => (
+                                        <Checkbox.Root 
+                                        key={ano}
+                                        checked={anosChecked[index]}
+                                        onCheckedChange={() =>
+                                            handleAnoCheckbox(index, ano)
+                                        }>
                                             <Checkbox.HiddenInput />
                                             <Checkbox.Control />
-                                            <Checkbox.Label>{tema}</Checkbox.Label>
+                                            <Checkbox.Label>{ano}</Checkbox.Label>
                                         </Checkbox.Root>
-                                    }
-                                    </For>
+                                    ))}
+                                    
                                 </Stack>
                             <Separator mt={4}/>
                             </Box>
@@ -78,11 +162,9 @@ export const GradePublicacoes = () => {
 
                         <Box mt={8} overflowY={"auto"} h={"76vh"}>
                             <Grid className="grid-cols-5" placeItems={"center"} gap={4} m={2} mb={12}>
-                                <For each={todasPublicacoes.filter(p => p.title.includes(filtro) || p.author.includes(filtro))}>
-                                    {(item) =>
-                                        <MiniPublicacao item={item}/>
-                                    }
-                                </For>
+                                {publicacoesFiltradas.map((item, i) => (
+                                    <MiniPublicacao key={i} item={item} />
+                                ))}
                             </Grid>
                         </Box>
                     </Box>

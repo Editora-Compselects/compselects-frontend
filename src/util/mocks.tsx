@@ -422,7 +422,7 @@ export const lancamentos = [
   export const todasPublicacoes = [
     {
       title: 'Programacao Web akjsnajknjkndfjk',
-      type: 'livro',
+      type: 'Artigo',
       author: 'Demetrio Mestreeeeeeeeeeeeeee',
       summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus. Praesent quis dolor dictum, tincidunt nisl sit amet, ultrices est. Aliquam erat volutpat. Fusce iaculis nulla sapien, at bibendum turpis tincidunt et. In ullamcorper justo justo, ut pulvinar mi fringilla in. Cras sem elit, tempor eget turpis sed, auctor mollis tellus. Etiam ut arcu sed nunc semper sollicitudin. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse potenti.',
       coverImage: mockimageurl,
@@ -461,7 +461,7 @@ export const lancamentos = [
     },
     {
       title: 'Programacao Web 2',
-      type: 'livro',
+      type: 'Livro',
       author: 'Demetrio Mestre',
       summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus. Praesent quis dolor dictum, tincidunt nisl sit amet, ultrices est. Aliquam erat volutpat. Fusce iaculis nulla sapien, at bibendum turpis tincidunt et. In ullamcorper justo justo, ut pulvinar mi fringilla in. Cras sem elit, tempor eget turpis sed, auctor mollis tellus. Etiam ut arcu sed nunc semper sollicitudin. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse potenti.',
       coverImage: mockimageurl,
