@@ -15,7 +15,7 @@ export const Sobre = () => {
                         <Text fontWeight={"bold"} fontSize={"3xl"}>A Editora</Text>
                         <Text textAlign={"justify"} mt={8} fontSize={"lg"}>{texto}</Text>
                         <Text textAlign={"justify"} mt={8} fontSize={"lg"}>
-                            Quer saber mais sobre a Compselects? Explore nossa aba <Span textDecor={"underline"} cursor={"pointer"} color={"#2767BA"} onClick={()=>navigate("/sobre")}>Sobre Nós</Span>!</Text>
+                            Quer saber mais sobre a Compselects? Explore nossa aba <Span textDecor={"underline"} cursor={"pointer"} color={"#101f50"} onClick={()=>navigate("/sobre")}>Sobre Nós</Span>!</Text>
                     </Box>
                     <Flex>
                         <Separator orientation={"vertical"}></Separator>

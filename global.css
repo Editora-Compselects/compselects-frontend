@@ -184,12 +184,12 @@ Button.disabled:hover{
 }
 
 .cardShadow{
-	box-shadow: 10px -10px #2767BA;
+	box-shadow: 10px -10px #101f50;
 }
 
 .cardShadow:hover{
-	border: 1px solid #2767BA;
-	box-shadow: 10px -10px #2767BA;
+	border: 1px solid #101f50;
+	box-shadow: 10px -10px #101f50;
 }
 
 .holographic-card {

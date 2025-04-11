@@ -8,7 +8,7 @@ export const Footer = () => {
     
     return (
         <>
-            <Box bg="#1353A6" color="#EFF4FD" py={8}>
+            <Box bg="#101f50" color="#EFF4FD" py={8}>
 
                 <Grid className="grid-cols-4">
                     <Box alignItems={"end"} display={"flex"} mx={8} gapX={2}>

@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 export const NavBar = () => {
     const navigate = useNavigate();
     return (
-      <Box position={"fixed"} zIndex={"999"} px={8} height={"12vh"} w={"full"} bgColor={"#2767BA"} alignContent={"center"} color={"#EFF4FD"}>
+      <Box position={"fixed"} zIndex={"999"} px={8} height={"12vh"} w={"full"} bgColor={"#101f50"} alignContent={"center"} color={"#EFF4FD"}>
         <Flex w={"full"} gap={8} placeContent={"space-between"}>
             <Flex alignItems={"center"} gapX={2}>
                 <BookCopy size={"28"}/>
