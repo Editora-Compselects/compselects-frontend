@@ -30,6 +30,10 @@ export const DetalhesEvento = ({
                         <Breadcrumb.Root size={"lg"}>
                             <Breadcrumb.List>
                                 <Breadcrumb.Item>
+                                <Breadcrumb.Link href="/">Compselects</Breadcrumb.Link>
+                                </Breadcrumb.Item>
+                                <Breadcrumb.Separator />
+                                <Breadcrumb.Item>
                                 <Breadcrumb.Link href="/eventos">Eventos</Breadcrumb.Link>
                                 </Breadcrumb.Item>
                                 <Breadcrumb.Separator />
