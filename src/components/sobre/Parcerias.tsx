@@ -20,7 +20,7 @@ export const Parcerias = () => {
         <>
             <Box bgColor={"white"} color={"#262A38"} py={8}>
                     <Box p={8} textAlign={"center"} alignContent={"center"}>
-                        <Text fontSize={"3xl"}>Nossos parceiros</Text>
+                        <Text fontWeight={"bold"} fontSize={"3xl"}>Nossos parceiros</Text>
                     </Box>
                     <Flex wrap={"wrap"} gap={3} mx={8} mb={12} justifyContent={"center"}>
                         <For each={parcerias}>

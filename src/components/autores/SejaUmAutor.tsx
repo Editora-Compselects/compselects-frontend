@@ -10,7 +10,7 @@ export const SejaUmAutor = () => {
         <Box bgColor={"#EFF4FD"} color={"#262A38"}>
             <Grid className="grid-cols-2">
                 <Box p={8} textAlign={"center"} alignContent={"center"}>
-                    <Text fontSize={"3xl"}>Seja um autor!</Text>
+                    <Text fontSize={"3xl"} fontWeight={"bold"}>Seja um autor!</Text>
                     <Text textAlign={"justify"} mt={8} fontSize={"lg"}>{texto}</Text>
                 </Box>
                 <Flex>

@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: 'Regular';
-    src: url('src/fonts/BigJohnPRO-Regular.otf');
+    src: url('src/fonts/Astonpoliz.otf');
 }
 
 @font-face {
@@ -16,7 +16,7 @@
 }
 
 p,span,h1,h2,h3,h4,h5,h6,div{
-    font-family: 'Bold';
+    font-family: 'Regular';
 }
 
 Button:hover{

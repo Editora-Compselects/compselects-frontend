@@ -14,7 +14,7 @@ export const Newsletter = () => {
                         <Image fit={"cover"} w={"full"} h={"full"} minH={"90vh"} src={mockimageurl}></Image>
                     </Flex>
                     <Box p={8} alignContent={"center"}>
-                        <Text textAlign={"center"} fontSize={"3xl"}>Fique por dentro de tudo no ramo da computação</Text>
+                        <Text fontWeight={"bold"} textAlign={"center"} fontSize={"3xl"}>Fique por dentro de tudo no ramo da computação</Text>
                         <Text textAlign={"justify"} mt={8} fontSize={"lg"}>{texto}</Text>
                         <Input bgColor={"#EFF4FD"} mt={8} color={"#0B1436"} placeholder='Seu e-mail aqui'></Input>
                         <Button className='non-holographic-card' mt={8} bgColor={"#8B9CC4"}>Inscrever-se agora</Button>

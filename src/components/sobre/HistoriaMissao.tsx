@@ -10,7 +10,7 @@ export const HistoriaMissao = () => {
             <Box bgColor={"white"} color={"#262A38"}>
                 <Grid className="grid-cols-2">
                     <Box p={8} textAlign={"center"} alignContent={"center"}>
-                        <Text fontSize={"3xl"}>História e Missão</Text>
+                        <Text fontWeight={"bold"} fontSize={"3xl"}>História e Missão</Text>
                         <Text textAlign={"justify"} mt={8} fontSize={"lg"}>{texto}</Text>
                         </Box>
                     <Flex>

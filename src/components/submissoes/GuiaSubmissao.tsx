@@ -13,9 +13,9 @@ Fusce consectetur odio eget ex facilisis, pharetra placerat mauris maximus. Aene
     return (
       <Box>
             <Box bgColor={"white"} color={"#262A38"}>
-                <Grid className="grid-cols-2">
+                <Grid className="grid-cols-2" alignItems={"center"}>
                     <Box p={8} textAlign={"center"}>
-                        <Text fontSize={"3xl"}>Faça parte da Compselects</Text>
+                        <Text fontWeight={"bold"} fontSize={"3xl"}>Faça parte da Compselects</Text>
                         <Text textAlign={"justify"} mt={8} fontSize={"lg"}>{texto}</Text>
                     </Box>
                     <Flex>

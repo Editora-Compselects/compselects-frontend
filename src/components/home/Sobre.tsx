@@ -12,7 +12,7 @@ export const Sobre = () => {
             <Box bgColor={"#EFF4FD"} color={"#262A38"}>
                 <Grid className="grid-cols-2">
                     <Box p={8} textAlign={"center"} alignContent={"center"}>
-                        <Text fontSize={"3xl"}>A Editora</Text>
+                        <Text fontWeight={"bold"} fontSize={"3xl"}>A Editora</Text>
                         <Text textAlign={"justify"} mt={8} fontSize={"lg"}>{texto}</Text>
                         <Text textAlign={"justify"} mt={8} fontSize={"lg"}>
                             Quer saber mais sobre a Compselects? Explore nossa aba <Span textDecor={"underline"} cursor={"pointer"} color={"#2767BA"} onClick={()=>navigate("/sobre")}>Sobre Nós</Span>!</Text>

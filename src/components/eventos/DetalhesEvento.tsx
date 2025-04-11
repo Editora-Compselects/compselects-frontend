@@ -20,7 +20,7 @@ export const DetalhesEvento = ({
 
     return (
         <>
-            <Box bgColor={"#EFF4FD"} color={"#262A38"}>
+            <Box color={"#262A38"}>
                 <Grid className="grid-cols-5">
                     <Flex className="col-span-2">
                         <Image fit={"cover"} w={"full"} h={"full"} minH={"90vh"} src={foto}></Image>
@@ -43,7 +43,7 @@ export const DetalhesEvento = ({
                             </Breadcrumb.List>
                         </Breadcrumb.Root>
                         
-                        <Text mt={6} fontSize={"3xl"}>{nome}</Text>
+                        <Text mt={6} fontSize={"3xl"}fontWeight={"bold"}>{nome}</Text>
                         <Flex flexDir={"column"} gap={2} mt={4}>
                             <Text textAlign={"justify"} fontSize={"lg"}>Data: {data}</Text>
                             <Text textAlign={"justify"} fontSize={"lg"}>Local: {local}</Text>

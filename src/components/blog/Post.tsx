@@ -48,7 +48,7 @@ export const Post = (
                         </Breadcrumb.Item>
                     </Breadcrumb.List>
                 </Breadcrumb.Root>
-                <Text fontSize={"3xl"} my={4}>{titulo}</Text>
+                <Text fontSize={"3xl"}fontWeight={"bold"} my={4}>{titulo}</Text>
                 <Flex alignItems={"center"} gap={3}>
                     <Avatar.Root size={"xl"}>
                         <Avatar.Image src={autorImg} />
