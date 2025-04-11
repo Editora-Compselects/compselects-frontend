@@ -25,7 +25,7 @@ export const Entrevistas = () => {
     navigate(`/blog/${item.titulo}`);
 }
   return (
-    <Box color={"#EFF4FD"} bgColor={"#0B1436"} pb={6} pt={8}>
+    <Box color={"#EFF4FD"} bgColor={"#191c27"} pb={6} pt={8}>
         <Box className="relative w-full overflow-hidden" >
         <Text fontSize="3xl" fontWeight="bold" textAlign="center" mb={8}>
             Entrevistas com autores renomados

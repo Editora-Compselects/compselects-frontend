@@ -5,7 +5,7 @@ import { authors } from "../../util/mocks";
 export const NossosAutores = () => {
   return (
     <>
-        <Box color={"#EFF4FD"} bgColor={"#0B1436"} pb={12} pt={8}>
+        <Box color={"#EFF4FD"} bgColor={"#191c27"} pb={12} pt={8}>
             <Box className="relative w-full" >
                 <Text fontSize="3xl" fontWeight="bold" textAlign="center" mb={8}>
                     Nossos Autores

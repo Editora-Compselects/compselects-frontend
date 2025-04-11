@@ -27,7 +27,7 @@ Nam placerat felis nibh. Vestibulum lobortis leo efficitur purus ultricies conva
 
     return (
       <Box>
-            <Box color={"#EFF4FD"} bgColor={"#0B1436"} p={8} pb={16}>
+            <Box color={"#EFF4FD"} bgColor={"#191c27"} p={8} pb={16}>
                 <Text fontSize="3xl" fontWeight="bold" textAlign="center" mb={8}>Política Editorial</Text>
                 <Grid className="grid-cols-3" justifyItems={"center"}>
                     <PoliticaEditorialCard nome="Políticas de Revisão" foto={mockimageurl} conteudo={texto1}/>

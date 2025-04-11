@@ -46,7 +46,7 @@ export const DestaquesDoMes = () => {
                         <Text fontSize={"lg"}>por {publication.author}</Text>
                         <Text mt={8} textAlign={"justify"} fontSize={"lg"}>{publication.summary}</Text>
                         </div>
-                        <Button bgColor={"#0B1436"} w={"max"}>Ver mais sobre este {publication.type}</Button>
+                        <Button bgColor={"#191c27"} w={"max"}>Ver mais sobre este {publication.type}</Button>
                       </Flex>
                     </Box>
                   </Flex>

@@ -6,7 +6,7 @@ export const Comunidade = () => {
 
     return (
         <>
-            <Box color={"#EFF4FD"} bgColor={"#0B1436"} p={8} pb={16}>
+            <Box color={"#EFF4FD"} bgColor={"#191c27"} p={8} pb={16}>
                 <Text fontSize="3xl" fontWeight="bold" textAlign="center" mb={8}>Nossa Comunidade</Text>
 
                 <Flex wrap={"wrap"} gap={6} justifyContent={"center"}>

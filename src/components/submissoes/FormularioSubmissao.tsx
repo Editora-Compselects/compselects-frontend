@@ -66,7 +66,7 @@ export const FormularioSubmissao = () => {
             </Box>
         </Grid>
 
-        <Button bgColor={"#0B1436"} mt={6} px={8}>Submeter</Button>
+        <Button bgColor={"#191c27"} mt={6} px={8}>Submeter</Button>
       </Box>
     );
   };
