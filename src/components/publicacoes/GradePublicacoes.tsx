@@ -162,7 +162,7 @@ export const GradePublicacoes = () => {
                     </Flex>
                     <Box className="col-span-4" p={8}>
                         <InputGroup startElement={<LuSearch />} w={"full"} justifyItems={"center"}>
-                            <Input placeholder="Buscar título ou autor..." onChange={(e)=>setFiltro(e.target.value)}/>
+                            <Input placeholder={"Buscar título ou autor..."} onChange={(e)=>setFiltro(e.target.value)} value={filtro === '' ? '' : filtro}/>
                         </InputGroup>
 
                         <Box mt={8} overflowY={"auto"} h={"76vh"}>
