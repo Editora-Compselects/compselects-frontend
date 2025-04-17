@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { Box, IconButton } from '@chakra-ui/react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import { mockimageurl } from '../../util/imageUrls';
+import slide1 from "../../../public/slide1.png";
+import slide2 from "../../../public/slide2.png";
+import slide3 from "../../../public/slide3.png";
 
 export const HeroSection = () => {
   const images = [ //depois mudar pra imagens relevantes
-    mockimageurl,
-    mockimageurl,
-    mockimageurl,
-    mockimageurl,
+    slide1,
+    slide2,
+    slide3,
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

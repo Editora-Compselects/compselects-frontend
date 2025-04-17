@@ -35,7 +35,7 @@ export const BestSellers = () => {
                 className="flex-shrink-0"
                 mx={2}
                 w={"20vw"}
-                h={"70vh"}
+                h={"80vh"}
                 textAlign="center"
                 color={"#EFF4FD"}
                 cursor={"pointer"}

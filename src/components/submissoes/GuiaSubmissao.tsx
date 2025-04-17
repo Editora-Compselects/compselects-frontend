@@ -1,14 +1,10 @@
 import { Box,Flex, Grid, Separator, Text,Image } from "@chakra-ui/react";
-import { mockimageurl } from "../../util/imageUrls";
+import { facaParteImg, mockimageurl } from "../../util/imageUrls";
 
 export const GuiaSubmissao = () => {
 
     const texto = `
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit quis mauris eget pulvinar. Donec nec erat eget neque scelerisque pharetra vel rhoncus sem. Proin sit amet nibh sollicitudin, imperdiet augue et, ullamcorper ante. Maecenas non ornare elit. Curabitur gravida ut dolor quis faucibus. Suspendisse potenti. Sed tincidunt lobortis pellentesque. Sed cursus luctus sapien eu cursus.
-
-Nam placerat felis nibh. Vestibulum lobortis leo efficitur purus ultricies convallis. Sed sollicitudin a nisi in tincidunt. Duis massa mi, scelerisque ac urna nec, facilisis luctus dolor. Nunc vel scelerisque dolor. Quisque iaculis lectus metus, vitae fringilla felis hendrerit eget. Integer bibendum varius fermentum. Donec ultrices pretium dui, ut faucibus quam faucibus in. Etiam bibendum, enim sed pulvinar pretium, massa nibh ultricies est, sit amet eleifend risus tortor nec ipsum. Nullam interdum pharetra efficitur.
-
-Fusce consectetur odio eget ex facilisis, pharetra placerat mauris maximus. Aenean accumsan, mauris sed hendrerit semper, mi nunc varius diam, in ultricies justo turpis sit amet ligula. Phasellus bibendum et enim sed ultrices. Nam ultrices odio quis orci suscipit condimentum. Nam ac tincidunt massa, et efficitur magna. Mauris tellus nisl, faucibus vitae lacinia eleifend, varius sit amet elit. Etiam ut urna tincidunt, placerat mi ut, bibendum ex. Duis eu sem bibendum, lacinia augue non, ultrices eros. Maecenas mattis dictum arcu. Nullam posuere quam sit amet neque molestie sagittis. Etiam et nisl at nulla molestie fermentum. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+    A Editora CompSelect está sempre aberta a novas ideias e contribuições que fortaleçam a produção científica em Ciência da Computação. Se você desenvolveu uma pesquisa relevante, escreveu um artigo técnico ou elaborou um livro acadêmico, este é o espaço para dar visibilidade ao seu trabalho. Nosso processo editorial preza pela qualidade, seriedade e apoio contínuo ao autor, desde a submissão até a publicação final. Ao publicar conosco, você se junta a uma rede de autores, professores e pesquisadores que contribuem ativamente para o avanço do conhecimento na área. Envie sua proposta e venha fazer parte da CompSelect.
     `
     return (
       <Box>
@@ -20,7 +16,7 @@ Fusce consectetur odio eget ex facilisis, pharetra placerat mauris maximus. Aene
                     </Box>
                     <Flex>
                         <Separator orientation={"vertical"}></Separator>
-                        <Image fit={"cover"} w={"full"} h={"full"} minH={"90vh"} src={mockimageurl}></Image>
+                        <Image fit={"cover"} w={"full"} h={"full"} minH={"90vh"} src={facaParteImg}></Image>
                     </Flex>
                 </Grid>
             </Box>

@@ -1,10 +1,10 @@
 import { Box, Flex, Grid,Image,Separator,Span,Text } from "@chakra-ui/react"
-import { mockimageurl } from "../../util/imageUrls"
+import { editoraImg, mockimageurl } from "../../util/imageUrls"
 import { useNavigate } from "react-router-dom";
 
 export const Sobre = () => {
 
-    const texto = "Donec eget turpis at metus ornare aliquam. Curabitur molestie porttitor dui vitae malesuada. Cras dignissim quam id lectus placerat elementum. Sed laoreet purus malesuada ligula convallis porta. Fusce mollis, urna commodo rhoncus consectetur, neque erat bibendum nisl, fermentum placerat est tortor bibendum justo. Aenean mattis, ex nec consectetur faucibus, quam eros semper velit, et luctus nunc tortor ac ipsum. Morbi tellus risus, sodales a nisl vitae, scelerisque ultrices augue. Duis varius, massa sed lobortis egestas, mauris libero fermentum turpis, luctus interdum nibh quam a tellus. Quisque mollis ipsum in convallis laoreet. Nam ullamcorper accumsan quam, non aliquam velit porttitor a. Donec porta tincidunt nibh, nec commodo dui bibendum nec. Pellentesque tempus cursus tortor et consectetur. Aliquam imperdiet sit amet est eu blandit. Duis elementum felis ut lacus dignissim lobortis."
+    const texto = "Com mais de 30 anos de atuação, a Editora CompSelect é referência na publicação de conteúdos voltados à Ciência da Computação. Nosso catálogo reúne livros técnicos, pesquisas científicas, artigos e periódicos acadêmicos, sempre com foco na qualidade editorial e no compromisso com a disseminação do conhecimento. Reconhecida por professores, pesquisadores e instituições de ensino, a CompSelect mantém uma relação próxima com a comunidade acadêmica, promovendo a inovação, o rigor científico e o acesso ao saber em múltiplos formatos e plataformas."
     const navigate = useNavigate();
 
     return (
@@ -19,7 +19,7 @@ export const Sobre = () => {
                     </Box>
                     <Flex>
                         <Separator orientation={"vertical"}></Separator>
-                        <Image fit={"cover"} w={"full"} h={"full"} minH={"90vh"} src={mockimageurl}></Image>
+                        <Image fit={"cover"} w={"full"} h={"full"} minH={"90vh"} src={editoraImg}></Image>
                     </Flex>
                 </Grid>
             </Box>

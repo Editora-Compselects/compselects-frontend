@@ -3,9 +3,7 @@ import { HiUpload } from "react-icons/hi";
 
 export const FormularioSubmissao = () => {
 
-    const texto = `
-    Envie seu livro, artigo ou periódico, etc etc etc Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit quis mauris eget pulvinar. Donec nec erat eget neque scelerisque pharetra vel rhoncus sem. Proin sit amet nibh sollicitudin, imperdiet augue et, ullamcorper ante. Maecenas non ornare elit.
-    `
+    const texto = `Envie seu livro, artigo ou periódico através do formulário abaixo. Em breve nossa equipe lhe contatará para dar-lhe um retorno sobre seu envio.`
 
     const categorias = createListCollection({
         items: [

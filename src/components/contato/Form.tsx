@@ -1,5 +1,5 @@
 import { Box,Text,Flex,Input,Textarea,Button, Grid,Image } from "@chakra-ui/react";
-import { mockimageurl } from "../../util/imageUrls";
+import { formularioImg, mockimageurl } from "../../util/imageUrls";
 
 export const Form = () => {
     return (
@@ -7,7 +7,7 @@ export const Form = () => {
         <Box color={"#EFF4FD"} bgColor={"#191c27"}>
             <Grid className="grid-cols-2">
                 <Flex>
-                    <Image fit={"cover"} w={"full"} h={"full"} minH={"80vh"} src={mockimageurl}></Image>
+                    <Image fit={"cover"} w={"full"} h={"full"} minH={"80vh"} src={formularioImg}></Image>
                 </Flex>
                 <Box p={8} alignContent={"center"}>
                     <Text textAlign={"center"} fontWeight={"bold"} fontSize={"3xl"}>Ou entre em contato conosco diretamente através deste formulário</Text>

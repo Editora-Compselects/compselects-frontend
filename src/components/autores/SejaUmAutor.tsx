@@ -1,9 +1,9 @@
 import { Box, Separator,Flex,Grid,Text,Image } from "@chakra-ui/react";
-import { mockimageurl } from "../../util/imageUrls";
+import { mockimageurl, sejaUmAutorImg } from "../../util/imageUrls";
 
 export const SejaUmAutor = () => {
 
-    const texto = "Donec eget turpis at metus ornare aliquam. Curabitur molestie porttitor dui vitae malesuada. Cras dignissim quam id lectus placerat elementum. Sed laoreet purus malesuada ligula convallis porta. Fusce mollis, urna commodo rhoncus consectetur, neque erat bibendum nisl, fermentum placerat est tortor bibendum justo. Aenean mattis, ex nec consectetur faucibus, quam eros semper velit, et luctus nunc tortor ac ipsum. Morbi tellus risus, sodales a nisl vitae, scelerisque ultrices augue. Duis varius, massa sed lobortis egestas, mauris libero fermentum turpis, luctus interdum nibh quam a tellus. Quisque mollis ipsum in convallis laoreet. Nam ullamcorper accumsan quam, non aliquam velit porttitor a. Donec porta tincidunt nibh, nec commodo dui bibendum nec. Pellentesque tempus cursus tortor et consectetur. Aliquam imperdiet sit amet est eu blandit. Duis elementum felis ut lacus dignissim lobortis."
+    const texto = "A CompSelect convida pesquisadores, docentes e profissionais da área de Ciência da Computação a submeterem suas obras para publicação. Trabalhamos com livros, artigos, periódicos e demais produções técnico-científicas, oferecendo um processo editorial criterioso, com revisão técnica, diagramação profissional e ampla divulgação no meio acadêmico. Nosso compromisso é valorizar a produção intelectual de qualidade, promovendo visibilidade e reconhecimento para autores que desejam contribuir com o avanço da ciência e da tecnologia. Se você tem um projeto editorial e busca uma editora séria, comprometida com o rigor científico e a excelência editorial, entre em contato conosco e envie sua proposta."
 
     return (
       <>
@@ -15,7 +15,7 @@ export const SejaUmAutor = () => {
                 </Box>
                 <Flex>
                     <Separator orientation={"vertical"}></Separator>
-                    <Image fit={"cover"} w={"full"} h={"full"} minH={"90vh"} src={mockimageurl}></Image>
+                    <Image fit={"cover"} w={"full"} h={"full"} minH={"90vh"} src={sejaUmAutorImg}></Image>
                 </Flex>
             </Grid>
         </Box>

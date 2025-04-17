@@ -1,38 +1,23 @@
 import { Box, Flex, Grid, Separator,Image,Text, Card } from "@chakra-ui/react";
-import { mockimageurl } from "../../util/imageUrls";
+import { mockimageurl, politicaEditorialImg } from "../../util/imageUrls";
 import { PoliticaEditorialCard } from "./PoliticaEditorialCard";
 
 export const PoliticaEditorial = () => {
 
-    const texto1 = `
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit quis mauris eget pulvinar. Donec nec erat eget neque scelerisque pharetra vel rhoncus sem. Proin sit amet nibh sollicitudin, imperdiet augue et, ullamcorper ante. Maecenas non ornare elit. Curabitur gravida ut dolor quis faucibus. Suspendisse potenti. Sed tincidunt lobortis pellentesque. Sed cursus luctus sapien eu cursus.
+    const texto1 = `Todos os trabalhos submetidos à Editora CompSelect passam por um processo criterioso de avaliação. As propostas são inicialmente analisadas quanto à adequação temática, originalidade e relevância científica. Em seguida, passam por revisão técnica e editorial, realizada por especialistas da área, garantindo a qualidade e a consistência do conteúdo publicado. O processo é conduzido de forma transparente, respeitando os prazos acordados e priorizando a excelência acadêmica.`
 
-Nam placerat felis nibh. Vestibulum lobortis leo efficitur purus ultricies convallis. Sed sollicitudin a nisi in tincidunt. Duis massa mi, scelerisque ac urna nec, facilisis luctus dolor. Nunc vel scelerisque dolor. Quisque iaculis lectus metus, vitae fringilla felis hendrerit eget. Integer bibendum varius fermentum. Donec ultrices pretium dui, ut faucibus quam faucibus in. Etiam bibendum, enim sed pulvinar pretium, massa nibh ultricies est, sit amet eleifend risus tortor nec ipsum. Nullam interdum pharetra efficitur.
+    const texto2 = `A CompSelect mantém um compromisso firme com a ética acadêmica e editorial. Espera-se que todos os trabalhos submetidos sejam originais, devidamente referenciados e livres de qualquer forma de plágio ou má conduta científica. Casos de duplicidade de submissão, falsificação de dados ou ausência de consentimento de coautores não são tolerados. Trabalhamos em conformidade com boas práticas editoriais, assegurando integridade, responsabilidade e respeito à comunidade científica.`
 
-Fusce consectetur odio eget ex facilisis, pharetra placerat mauris maximus. Aenean accumsan, mauris sed hendrerit semper, mi nunc varius diam, in ultricies justo turpis sit amet ligula. Phasellus bibendum et enim sed ultrices. Nam ultrices odio quis orci suscipit condimentum. Nam ac tincidunt massa, et efficitur magna. Mauris tellus nisl, faucibus vitae lacinia eleifend, varius sit amet elit. Etiam ut urna tincidunt, placerat mi ut, bibendum ex. Duis eu sem bibendum, lacinia augue non, ultrices eros. Maecenas mattis dictum arcu. Nullam posuere quam sit amet neque molestie sagittis. Etiam et nisl at nulla molestie fermentum. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-    `
-
-    const texto2 = `
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit quis mauris eget pulvinar. Donec nec erat eget neque scelerisque pharetra vel rhoncus sem. Proin sit amet nibh sollicitudin, imperdiet augue et, ullamcorper ante. Maecenas non ornare elit. Curabitur gravida ut dolor quis faucibus. Suspendisse potenti. Sed tincidunt lobortis pellentesque. Sed cursus luctus sapien eu cursus.
-
-    `
-
-    const texto3 = `
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit quis mauris eget pulvinar. Donec nec erat eget neque scelerisque pharetra vel rhoncus sem. Proin sit amet nibh sollicitudin, imperdiet augue et, ullamcorper ante. Maecenas non ornare elit. Curabitur gravida ut dolor quis faucibus. Suspendisse potenti. Sed tincidunt lobortis pellentesque. Sed cursus luctus sapien eu cursus.
-
-Nam placerat felis nibh. Vestibulum lobortis leo efficitur purus ultricies convallis. Sed sollicitudin a nisi in tincidunt. Duis massa mi, scelerisque ac urna nec, facilisis luctus dolor. Nunc vel scelerisque dolor. Quisque iaculis lectus metus, vitae fringilla felis hendrerit eget. Integer bibendum varius fermentum. Donec ultrices pretium dui, ut faucibus quam faucibus in. Etiam bibendum, enim sed pulvinar pretium, massa nibh ultricies est, sit amet eleifend risus tortor nec ipsum. Nullam interdum pharetra efficitur.
-
-    
-    `
+    const texto3 = `A Editora CompSelect valoriza a autoria e o reconhecimento intelectual de todos os colaboradores. Os direitos autorais das obras publicadas permanecem com os autores, salvo em casos específicos acordados previamente em contrato. Ao submeter um trabalho, o autor concede à CompSelect o direito de publicação, distribuição e divulgação da obra, respeitando os formatos e canais definidos. Todas as publicações seguem as normas legais de proteção à propriedade intelectual e observam as boas práticas de licenciamento, garantindo transparência, segurança e respeito aos direitos dos autores e coautores envolvidos.`
 
     return (
       <Box>
             <Box color={"#EFF4FD"} bgColor={"#191c27"} p={8} pb={16}>
                 <Text fontSize="3xl" fontWeight="bold" textAlign="center" mb={8}>Política Editorial</Text>
                 <Grid className="grid-cols-3" justifyItems={"center"}>
-                    <PoliticaEditorialCard nome="Políticas de Revisão" foto={mockimageurl} conteudo={texto1}/>
-                    <PoliticaEditorialCard nome="Ética" foto={mockimageurl} conteudo={texto2}/>
-                    <PoliticaEditorialCard nome="Direitos Autorais" foto={mockimageurl} conteudo={texto3}/>
+                    <PoliticaEditorialCard nome="Políticas de Revisão" foto={politicaEditorialImg[0]} conteudo={texto1}/>
+                    <PoliticaEditorialCard nome="Ética" foto={politicaEditorialImg[1]} conteudo={texto2}/>
+                    <PoliticaEditorialCard nome="Direitos Autorais" foto={politicaEditorialImg[2]} conteudo={texto3}/>
                 </Grid>
             </Box>
       </Box>

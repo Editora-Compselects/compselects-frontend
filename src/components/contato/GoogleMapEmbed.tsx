@@ -8,7 +8,7 @@ interface MapEmbedProps {
 }
 
 const GoogleMapEmbed: React.FC<MapEmbedProps> = ({
-  address = 'Av. Aprígio Veloso 882, Campina Grande, PB, Brasil',
+  address = 'Rua das Flores, 123, Jardim das Acácias, São Paulo, SP',
   width = '100%',
   height = '560px',
   zoom = 14,

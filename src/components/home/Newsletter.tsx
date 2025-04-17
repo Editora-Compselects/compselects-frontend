@@ -1,17 +1,17 @@
 import { Button, Input, Box, Text, Grid, Flex,Image } from '@chakra-ui/react';
-import { mockimageurl } from '../../util/imageUrls';
+import { mockimageurl, newsletterImg } from '../../util/imageUrls';
 
 
 export const Newsletter = () => {
 
-    const texto = "Assine nossa newsletter bla bla bla bla Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit quis mauris eget pulvinar. Donec nec erat eget neque scelerisque pharetra vel rhoncus sem."
+    const texto = "Assine nosso newsletter para não perder as novidades nos inúmeros campos da computação. Notícias relacionadas aos nossos eventos, postagens e publicações serão enviadas ao email cadastrado."
 
     return (
         <>
             <Box color={"#EFF4FD"} bgColor={"#191c27"}>
                 <Grid className="grid-cols-2">
                     <Flex>
-                        <Image fit={"cover"} w={"full"} h={"full"} minH={"90vh"} src={mockimageurl}></Image>
+                        <Image fit={"cover"} w={"full"} h={"full"} minH={"90vh"} src={newsletterImg}></Image>
                     </Flex>
                     <Box p={8} alignContent={"center"}>
                         <Text fontWeight={"bold"} textAlign={"center"} fontSize={"3xl"}>Fique por dentro de tudo no ramo da computação</Text>

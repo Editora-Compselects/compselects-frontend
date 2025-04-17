@@ -1,5 +1,5 @@
 import { Box, Text, Card, Flex, Image } from '@chakra-ui/react';
-import { mockimageurl } from '../../util/imageUrls';
+import { depoimentosAutoresImg, mockimageurl, publicacoesImg } from '../../util/imageUrls';
 import { useNavigate } from 'react-router-dom';
 
 export const AtalhosHomePage = () => {
@@ -15,7 +15,7 @@ export const AtalhosHomePage = () => {
                 <a href='#best-sellers'>
                     <Card.Root rounded={"xs"} className='cardShadow holographic-card' >
                         <Card.Body p={0} aspectRatio={"square"}>
-                            <Image w={"full"} h={"full"} src={mockimageurl}></Image>
+                            <Image w={"full"} h={"full"} src={publicacoesImg[0]}></Image>
                         </Card.Body>
                     </Card.Root>
                     <Text mt={3} fontSize={"xl"} fontWeight={"bold"}>Best Sellers</Text>
@@ -25,7 +25,7 @@ export const AtalhosHomePage = () => {
                 <a href='#lancamentos'>
                     <Card.Root rounded={"xs"} className='cardShadow holographic-card' >
                         <Card.Body p={0} aspectRatio={"square"}>
-                            <Image w={"full"} h={"full"} src={mockimageurl}></Image>
+                            <Image w={"full"} h={"full"} src={publicacoesImg[3]}></Image>
                         </Card.Body>
                     </Card.Root>
                     <Text mt={3} fontSize={"xl"} fontWeight={"bold"}>Lançamentos</Text>
@@ -35,7 +35,7 @@ export const AtalhosHomePage = () => {
                 <a href='#destaques'>
                     <Card.Root rounded={"xs"} className='cardShadow holographic-card' >
                         <Card.Body p={0} aspectRatio={"square"}>
-                            <Image w={"full"} h={"full"} src={mockimageurl}></Image>
+                            <Image w={"full"} h={"full"} src={publicacoesImg[2]}></Image>
                         </Card.Body>
                     </Card.Root>
                     <Text mt={3} fontSize={"xl"} fontWeight={"bold"}>Destaques</Text>
@@ -45,7 +45,7 @@ export const AtalhosHomePage = () => {
                 <a href='/autores'>
                     <Card.Root rounded={"xs"} className='cardShadow holographic-card' >
                         <Card.Body p={0} aspectRatio={"square"}>
-                            <Image w={"full"} h={"full"} src={mockimageurl}></Image>
+                            <Image w={"full"} h={"full"} src={depoimentosAutoresImg[3]}></Image>
                         </Card.Body>
                     </Card.Root>
                     <Text mt={3} fontSize={"xl"} fontWeight={"bold"}>Nossos autores</Text>
@@ -55,7 +55,7 @@ export const AtalhosHomePage = () => {
                 <a href='/publicacoes'>
                     <Card.Root rounded={"xs"} className='cardShadow holographic-card' >
                         <Card.Body p={0} aspectRatio={"square"}>
-                            <Image w={"full"} h={"full"} src={mockimageurl}></Image>
+                            <Image w={"full"} h={"full"} src={publicacoesImg[13]}></Image>
                         </Card.Body>
                     </Card.Root>
                     <Text mt={3} fontSize={"xl"} fontWeight={"bold"}>Todas as publicações</Text>

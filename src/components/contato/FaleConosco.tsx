@@ -3,7 +3,7 @@ import GoogleMapEmbed from "./GoogleMapEmbed";
 
 export const FaleConosco = () => {
 
-    const texto = "Praesent quis dolor dictum, tincidunt nisl sit amet, ultrices est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus. Praesent quis dolor dictum, tincidunt nisl sit amet, ultrices est."
+    const texto = "Fale conosco!A equipe da Editora CompSelect está à disposição para tirar dúvidas, receber sugestões, orientações sobre submissão de trabalhos ou qualquer outro assunto relacionado às nossas publicações e serviços editoriais. Entre em contato conosco por meio do formulário abaixo ou pelos nossos canais oficiais. Teremos prazer em atendê-lo com agilidade, atenção e o compromisso de sempre oferecer o melhor suporte à comunidade acadêmica e científica."
 
     return (
       <>
