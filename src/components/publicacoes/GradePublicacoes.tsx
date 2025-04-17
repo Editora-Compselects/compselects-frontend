@@ -76,6 +76,11 @@ export const GradePublicacoes = () => {
         });
     };
 
+    if(!!sessionStorage.getItem('autor')){
+        setFiltro(sessionStorage.getItem('autor')||'')
+        sessionStorage.removeItem('autor')
+    }
+
     const publicacoesFiltradas = todasPublicacoes.filter(pub => {
         const correspondeTexto =
             pub.title.toLowerCase().includes(filtro.toLowerCase()) ||

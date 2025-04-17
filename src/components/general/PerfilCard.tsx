@@ -1,4 +1,5 @@
 import { Badge, Box, Card, Image, Text } from "@chakra-ui/react";
+import { useNavigate } from "react-router-dom";
 
 export interface PerfilProps {
     nome: string;
@@ -16,9 +17,11 @@ export const PerfilCard = ({
     descricao,
     autor,
 }:PerfilProps) => {
-
+    
+    const navigate = useNavigate();
     function irParaPublicacoes(){
-        //quando clicar aqui, vá para a aba publicações e já coloque o filtro desse autor
+        sessionStorage.setItem("autor",nome)
+        navigate("/publicacoes");
     }
 
     return (

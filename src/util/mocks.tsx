@@ -462,7 +462,7 @@ export const lancamentos = [
     {
       title: 'Programacao Web 2',
       type: 'Livro',
-      author: 'Demetrio Mestre',
+      author: 'Pessoa 1',
       summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit id sem a rhoncus. Praesent quis dolor dictum, tincidunt nisl sit amet, ultrices est. Aliquam erat volutpat. Fusce iaculis nulla sapien, at bibendum turpis tincidunt et. In ullamcorper justo justo, ut pulvinar mi fringilla in. Cras sem elit, tempor eget turpis sed, auctor mollis tellus. Etiam ut arcu sed nunc semper sollicitudin. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse potenti.',
       coverImage: mockimageurl,
       vendas: 999,

@@ -1,4 +1,5 @@
 import { Box,Text ,Flex, Skeleton, Grid} from "@chakra-ui/react";
+import GoogleMapEmbed from "./GoogleMapEmbed";
 
 export const FaleConosco = () => {
 
@@ -30,7 +31,7 @@ export const FaleConosco = () => {
                         </Flex>
                     </Box>
                     
-                    <Skeleton rounded={"none"} h={"full"}></Skeleton> {/* colocar o mapa aqui */}
+                    <GoogleMapEmbed/>
                 </Grid>
             </Box>
         </Box>
